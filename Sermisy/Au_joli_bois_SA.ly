@@ -14,7 +14,7 @@ sopranoMusic = \relative { \clef "treble"
   bes2 as4 g | f2. g4 | as4 c bes4. as8 | g4 (f2 e4) |f1|
   f'2 f4 f4 |  es4. d8 c4 es4 | d4 c4 c b| c1 | f2 f4 f4|
   es4. d8 c4 es4 | d4 c c b | c1 | c2 | as4 c4 | bes2 g2|
-  as2 f4 as g2 es 2 as2 des,4 f es2 c | r4 c es f | g4. f8 g4 as4 (as8 g8)  g2 f4|  g1|
+  as2 f4 as| g2 es2| f2 des4 f es2 c | r4 c es f | g4. f8 g4 as4 (as8 g8)  g2 f4|  g1|
   c2 as4 c | bes2 g | as f4 as | g2 es|  f2 des4 f| es2 c| r4 c es f | g4. f8 g4 as | g f2 e4| f1\fermata 
    
 }
@@ -29,7 +29,8 @@ sopranoWords = \lyricmode {
   Fi de li -- es- se
   Et har -- di -- es -- se! 
   Re -- gret mop -- res -- se Puis -- que j'ai per -- du mes - a - mours. 
-  Las! trop j'en -- du -- re Le temps me du -- re Jo vous as -- su -- re Seu -- les vois n'a - - vez plus de - coeurs!
+  Las! trop j'en -- du -- re Le temps me du -- re 
+  Je vous as -- su -- re Seu -- les vois n'a - - vez plus de - coeurs!
 }
 
 
@@ -49,7 +50,7 @@ altoWords = \lyricmode {
   Ó zso -- li boa, an lomb -- rö dön szu -- szi
   Mö fót al -- lé   púr pasz -- szé ma tri -- szte  szö;
   Ramp -- li dö dőly, dőn szu -- vö -- nir tran -- szi,
-  Man -- zsé mö fó -- men -- tö pa -- rö dan -- go -- szö.
+  Man -- zsé mö fó -- men -- tö pa -- rö dan -- goa -- szö.
   Dan zön - zsar -- den ram -- pli dö noa -- rö flőr,
   Dö mé - dö zjö fö -- ré lar mö é plőr
   Fi dö li -- e -- sszö É ár -- di -- e -- sszö!
