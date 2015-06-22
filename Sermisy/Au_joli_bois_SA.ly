@@ -2,9 +2,9 @@
 
 \version "2.16.2"
 \header {	
-    tagline = "Claudin de Sermisy: Au joli bois - Szoprán és alt"
+    tagline = "Alt szólama alatt a francia dalszöveg fonetikus átirata - French lyrics with Hungarian pronounciation"
       title = "Au joli bois"
-      composer = "Claudin de Sermisy"
+      composer = "Claudin de Sermisy (1490-1562)"
 }
 global = {
   \key es \major
@@ -16,7 +16,7 @@ sopranoMusic = \relative { \clef "treble"
   | c'2 c4 c | c2. es4 | d4. c8 bes4 a4 | bes1|
   bes2 as4 g | f2. g4 | as4 c bes4. as8 | g4 (f2 e4) |f1|
   f'2 f4 f4 |  es4. d8 c4 es4 | d4 c4 c b| c1 | f2 f4 f4|
-  es4. d8 c4 es4 | d4 c c b | c1 | c2 | as4 c4 | bes2 g2|
+  es4. d8 c4 es4 | d4 c c b | c1 | c2 as4 c4 | bes2 g2|
   as2 f4 as| g2 es2| f2 des4 f es2 c | r4 c es f 
  | g4. (f8) g4 as4 (as8 g8)  g2 f4|  g1|
   c2 as4 c | bes2 g | as f4 as | g2 es|  f2 des4 f| es2 c| r4 c es f | g4. f8 g4 as | g f2 e4| f1\fermata \bar "|."
@@ -48,7 +48,7 @@ altoMusic = \relative {  \clef "treble"
   as4 g2 g4 | bes4. as8 g4 g4 | es1 | as2 es4 f4 |g2 es2
   | f2 c4 d4 | es2 c2 | des2 as4 bes4 | c2 c2 | r4 es4 c4 d4|
   es2. es4 | es2 d2| c1| as'2 es4 f4 | g2 es2 | f2 c4 d4| es2 c2|
-  des2 as4 bes4| c2 c2 | r4  es4 c4. d8 | es2 | f4. es8 | d4 bes4 c2 | c1 \fermata
+  des2 as4 bes4| c2 c2 | r4  es4 c4. d8 | es2 f4. es8 | d4 bes4 c2 | c1 \fermata
 
 }
 altoWords = \lyricmode {
