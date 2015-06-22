@@ -1,7 +1,10 @@
+#(set-global-staff-size 19)
+
 \version "2.16.2"
 \header {	
     tagline = "Claudin de Sermisy: Au joli bois - Szoprán és alt"
-
+      title = "Au joli bois"
+      composer = "Claudin de Sermisy"
 }
 global = {
   \key es \major
@@ -16,7 +19,7 @@ sopranoMusic = \relative { \clef "treble"
   es4. d8 c4 es4 | d4 c c b | c1 | c2 | as4 c4 | bes2 g2|
   as2 f4 as| g2 es2| f2 des4 f es2 c | r4 c es f 
  | g4. (f8) g4 as4 (as8 g8)  g2 f4|  g1|
-  c2 as4 c | bes2 g | as f4 as | g2 es|  f2 des4 f| es2 c| r4 c es f | g4. f8 g4 as | g f2 e4| f1\fermata 
+  c2 as4 c | bes2 g | as f4 as | g2 es|  f2 des4 f| es2 c| r4 c es f | g4. f8 g4 as | g f2 e4| f1\fermata \bar "|."
    
 }
 
