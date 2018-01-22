@@ -11,6 +11,7 @@
 
 \new StaffGroup { 
 	<<
+	  %SOPRAN
 	\new Staff {
 		\relative c' {
 			\tempo "Andante"
@@ -85,6 +86,8 @@
 		%
 		él -- ned, hal -- nod kell.
 	}
+	
+	% ALT
 	\new Staff {
 		\relative c' {
 			\set Staff.instrumentName = #"A"
@@ -202,6 +205,7 @@
 		%
 		él -- ned, hal -- nod kell.
 	}
+	% BASS
 	\new Staff {
 		\relative c' {
 			\set Staff.instrumentName = #"B"
@@ -209,7 +213,7 @@
 			\key d \major
 			\partial 4 r4
 			r1
-			b,,8. b16 b8. b16 b4 cis
+			b,8. b16 b8. b16 b4 cis
 			b4\< fis4 \! \>  b4. \! cis8
 			d2. r4
 			a4 a4 cis8 r8 cis8 cis8
