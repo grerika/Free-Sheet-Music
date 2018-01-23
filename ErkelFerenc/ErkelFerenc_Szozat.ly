@@ -1,5 +1,5 @@
 \version "2.12.3"
-#(set-global-staff-size 19)
+#(set-global-staff-size 19.5)
 %#(set-default-paper-size "a3" 'landscape)
 \header {
 	title = "Szózat"
