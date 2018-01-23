@@ -5,7 +5,8 @@
 	title = "Szózat"
 	poet = "Vörösmarty Mihály"
 	composer = "Zene: Erkel Ferenc"
-	tagline = ##f
+	arranger ="Eredeti dallama es harmóniái nyomán kórusra átdolgozta: Bárdos Lajos"
+	%tagline = ##f
 	%instrument = "Vegyeskar"
 }
 
