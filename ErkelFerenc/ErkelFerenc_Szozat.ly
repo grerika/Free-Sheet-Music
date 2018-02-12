@@ -98,7 +98,7 @@
 			d2. cis4
 			b4 ais4 b4. cis8
 			d2. r4
-			cis4. cis16( fis16) e8 r8 e8 e
+			cis4 cis8( fis8) eis8 r8 eis8 eis
 			fis8. gis16 a2 fis4
 			fis4. fis8 fis4( eis8) eis 
 			cis2 r4 fis4 
@@ -135,6 +135,32 @@
 		}
 	}
 	
+	\addlyrics {
+		Ha -- zád -- nak ren -- dü -- let -- le -- nül,
+		Légy hí -- ve ó ma -- gyar
+		Böl -- csőd az, s_maj -- dan sí -- rod is, 
+		Mely á -- pol, s_el -- ta -- kar
+		%
+		A nagy vi -- lá -- gon e kí -- vül
+		Nin -- csen szá -- mod -- ra hely.
+		Áld -- jon vagy ver -- jen sors ke -- ze,
+		Itt él -- ned, hal -- nod kell.
+		%
+		2._Légy hí -- ve ren -- dü -- let -- le -- nül
+		Ha -- zád -- nak, ó ma -- gyar!
+		Ez él -- te -- tőd, s_ha el -- bu -- kál,
+		Hant -- já -- val ez ta -- kar
+		%
+		A nagy vi -- lá -- gon e kí -- vül
+		Nin -- csen szá -- mod -- ra hely.
+		Áld -- jon vagy ver -- jen sors ke -- ze,
+		Itt él -- ned, hal -- nod kell.
+		%
+		A 
+		%
+		él -- ned, hal -- nod kell.
+	}
+	
 	%TENOR
 	\new Staff {
 		\relative c' {
@@ -146,8 +172,8 @@
 			fis8. fis16 fis8. fis16 fis4 eis4
 			d4 cis d4. eis8
 			fis2. r4
-			fis4 fis a8 r a a
-			d8. eis16 fis2 e4
+			fis4 fis gis8 r gis gis
+			a8. b16 cis2 d4
 			cis4. cis8 b4. b8 
 			ais2 r4 fis4
 			b8. ais16 b8. fis16 gis4 ais
@@ -253,5 +279,7 @@
 			\bar "|."
 		}
 	}
+	
+	
 	>>
 }
