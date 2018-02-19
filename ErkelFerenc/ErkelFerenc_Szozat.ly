@@ -57,7 +57,7 @@
 			\alternative {
 				{d4. b8 cis4. ais8 b4 r r fis}
 				{\tempo "(poco allarg)"
-				d'4. b8 cis4. ais8      b2. r4}
+				dis'4. b8 cis4. ais8      b2. r4}
 			}
 		}
 	}
@@ -173,7 +173,7 @@
 			d4 cis d4. eis8
 			fis2. r4
 			fis4 fis gis8 r gis gis
-			a8. b16 cis2 d4
+			a8. bis16 cis2 d4
 			cis4. cis8 b4. b8 
 			ais2 r4 fis4
 			b8. ais16 b8. fis16 gis4 ais
@@ -249,9 +249,9 @@
 			fis2 r4 fis4
 			b,8. cis16 d8. e16 d4 cis4
 			d2 r4 d'4
-			cis b a gis  
+			cis b ais gis  
 			fis2 r4 fis4
-			b,8. cis16 d8. e16 d4 g8 fis8
+			b,8. cis16 d8. e16 d4 g8 (fis8)
 			e2. \breathe e4
 			fis fis fis fis
 			b,4 r4 r2
@@ -267,7 +267,7 @@
  			\repeat volta 2 {
 				b,8. cis16 d8. e16 d4 cis4
 				d2 r4 d'4
-				cis b a gis  
+				cis b ais gis  
 				fis2 r4 fis4
 				b,8. cis16 d8. e16 d4 g8( fis8)
 				e2. \breathe  e4
@@ -280,6 +280,30 @@
 		}
 	}
 	
-	
+\addlyrics {
+		ren -- dü -- let -- le -- nül
+		Légy hí -- ve ó ma -- gyar
+		Böl -- csőd az, s_maj -- dan sí -- rod is, 
+		Mely á -- pol, s_el -- ta -- kar
+		%
+		A nagy vi -- lá -- gon e kí -- vül
+		Nin -- csen szá -- mod -- ra hely.
+		Áld -- jon vagy ver -- jen sors ke -- ze,
+		Itt él -- ned, hal -- nod kell.
+		%
+		ren -- dü -- let -- le -- nül
+		Ha -- zád -- nak, ó ma -- gyar!
+		Ez él -- te -- tőd, s_ha el -- bu -- kál,
+		Hant -- já -- val ez ta -- kar
+		%
+		A nagy vi -- lá -- gon e kí -- vül
+		Nin -- csen szá -- mod -- ra hely.
+		Áld -- jon vagy ver -- jen sors ke -- ze,
+		Itt él -- ned, hal -- nod kell.
+		%
+		A	 
+		%
+		él -- ned, hal -- nod kell.
+	}	
 	>>
 }
