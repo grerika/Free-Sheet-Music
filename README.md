@@ -1,2 +1,3 @@
 # Free-Sheet-Music
-LilyPondban készített kották
+HU LilyPondban készített kották
+EN Sheets created using Lilypond
