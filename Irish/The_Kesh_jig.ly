@@ -20,11 +20,11 @@ voice = \relative c' {
   \global
   %\dynamicUp
   \bar ".|:"
-  g'4 g8 g8 a b | a4 a8 a8 b d | e d d g d d | e d b d b a |
-  g4 g8 g8 a b | a4 a8 a8 b d | e8 d d g d d | b a fis g4.  
+  g'4^G g8 g8 a b | a4^D a8 a8 b d | e^C d d g^G d d | e^C d b d^D b a |
+  g4^G g8 g8 a b | a4^D a8 a8 b d | e8^C d d g^G d d | b^D a fis g4.^G  
   \bar ":|.|:"
-  b4 b8 d4 d8 | e8 g e d b a | b4 b8 d b g | a b a a g a | 
-   b a b d cis d | e g e d b d | g fis g a g a | b g g g4. 
+  b4^G b8 d4 d8 | e8^C g e d^G b a | b4^G b8 d b g | a^D b a a g a | 
+   b^G a b d cis d | e^C g e d^G b d | g^C fis g a^D g a | b^G g g g4. 
   \bar ":|."
 }
 
