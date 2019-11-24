@@ -22,13 +22,13 @@ voice = \relative c' {
 \bar ".|:" 
 d8 
   %|g a b d,4 b'8 c4 a8 b g e| g a b d, e g a4. a8 g e | g a b d,4 b'8 | c4 a8 b g e |g a b d,4 e8 g4. g16 g r8 d8|
-  |g a b d,4 b'8 c4 a8 b g e| g a b d, e g a4. a8 g8 e | g a b d,4 b'8 | c4 a8 b g e |g a b d,4 e8 g2  r8   d8|
+  |g^G a b d,4 b'8 c4^C a8 b^G g e| g^G a b d, e g a4.^D a8 g8 e | g^G a b d,4 b'8 | c4^C a8 b^G g e |g^G a b d,4^D e8 g2^G  r8   d8|
   g8 a b d,4 b'8 c4 a8 b g e| g a b d,8 e8 g8 a4 a8 a4 e8 | g a b d,4 b'8  c4 a8 b g e |g a b d,8 e fis g4 g8 g4 \bar ":|.|:"
-  a8 |  b8 g g a g g b g g a g e | g a b d, e g a4. a8 g a | b g g a g g b g g a g e|  g a b  d,4 e8 g2 r8 g8 
-  |   b8 g g a g g b g g a g e | g a b d,4 e8 a4  a8 a4. 
-  g8 a g fis8 g fis | e fis e  d e d | g a b d, e fis g4 g8 g4
+  a8 |  b8^G g g a^D g g b^G g g a^C g e | g^G a b d, e g a4.^D a8 g a | b^G g g a^D g g b^G g g a^C g e|  g^G a b  d,4^D e8 g2^G r8 g8 
+  |   b8^G g g a^D g g b^G g g a^C g e | g^G a b d,4 e8 a4^D  a8 a4. 
+  g8^G a g fis8^D g fis | e^C fis e  d^D e d | g^G a b d,^D e fis g4^G g8 g4
   \bar ":|.|:" 
-  d'8    g4 g8 a8 g a b  a g e4 d8  | g4 g8 g8 a b a4 a8 a4.|g8 a g fis8 g fis | e fis e  d e d | g a b d, e fis g4 g8 g4.
+  d'8    g4^G g8 a8^D g a b^G  a g e4 d8  | g4 g8 g8 a b a4^D a8 a4.|g8^G a g fis8^D g fis | e^C fis e  d^D e d | g^G a b d,^D e fis g4^G g8 g4.
   \bar ":|."
 }
 
