@@ -56,7 +56,7 @@ verse_second = \lyricmode {
   Tó -- ki -- rály -- nő dom -- bok há -- tán új bér -- cek -- re el -- ta -- lál.
   Lel -- két fél -- tő hű gond -- já -- val re -- pí -- ti Fo -- lyó -- ki -- rály.
   Ná -- szuk hoz -- ta E -- ső hull ma ön -- tö -- zi a szá -- raz fát.
-  Tő -- lük e -- red a dús Er -- dő mit csak em -- ber fia lát.
+  Tő -- lük e -- red a dús Er -- dő mit csak em -- ber fi -- a lát.
 }
 
 \score {
