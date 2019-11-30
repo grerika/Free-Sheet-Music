@@ -3,7 +3,7 @@
 
 \version "2.16.2"
 \header {
-  title = "Tókirálynó, Folyókirály"
+  title = "Tókirálynő, Folyókirály"
   arranger = "Erdei Rezervátum"
   enteredby = "grerika @ github"
   lastupdated = "11/30/2019"
