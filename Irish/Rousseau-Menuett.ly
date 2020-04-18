@@ -8,7 +8,7 @@
   %arranger  = ""
   enteredby = "grerika @ github"
   lastupdated = "04/18/2020"
-  tagline = "Gobliners"  
+  tagline = ""  
 }
 
 global = {
@@ -73,7 +73,7 @@ voice = \relative c'{
        | r4  <<bes8 d>> <<c es>> <<bes4 d>>
        |  <<a4^\markup{"Ritenuto"} c>> <<g bes>> <<fis_\> a>>
         g2. \!
-       \bar ":|."  
+       \bar "|."  
 }
 
 harp = {
@@ -106,7 +106,7 @@ harp = {
   \break
   % Linw 8
   g4 r r |  d' bes g |  c'^\f d' d | <<g2.bes>>
-  \bar ":|."
+  \bar "|."
 }
 
 
