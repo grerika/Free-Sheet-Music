@@ -1,13 +1,14 @@
-#(set-default-paper-size "a5" 'landscape)
-#(set-global-staff-size 22)
+#(set-default-paper-size "a4" 'portrait)
+%#(set-default-paper-size "a5" 'landscape)
+%#(set-global-staff-size 22)
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "The Foggy Dew"
   arranger = "Traditional Irish Tune"
   enteredby = "grerika @ github"
-  lastupdated = "04/11/2020"
-  tagline = ""
+  tagline = "Last updated: 04/11/2020 (Gobliners)"  
+  %instrument = "Tenor recorder"
 }
 
 global = {
