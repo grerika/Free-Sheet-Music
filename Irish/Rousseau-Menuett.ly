@@ -5,10 +5,8 @@
 \header {
   title = "Menuet en sol mineur"
   composer = "Jean Jacques ROUSSEAU (1713-1776)"
-  %arranger  = ""
   enteredby = "grerika @ github"
-  lastupdated = "04/18/2020"
-  tagline = ""  
+  tagline = "Last updated: 04/18/2020 (Gobliners)"
 }
 
 global = {
