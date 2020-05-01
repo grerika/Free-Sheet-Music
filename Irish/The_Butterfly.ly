@@ -1,21 +1,14 @@
-#(set-default-paper-size "a4" 'landscape)
-#(set-global-staff-size 16)
+#(set-default-paper-size "a4" 'portrait)
+%#(set-global-staff-size 16.5)
 
-
-% recorder fingering chart is not available "by default in LilyPond
-%      Necessary patch: available here: http://lilypond.1069038.n5.nabble.com/Custom-woodwind-diagram-td207588.html
-% 	+ Hint: search for ".patch"
-%	+Note: it did not work for me in LilyPond 2.18
-\version "2.19"
+\version "2.18"
 \header {
   title = "The Butterfly"
   subtitle = "Slip Jig"
-  subsubtitle = "with baroque (English) fingering chart for soprano recorder"
-%  subsubtitle = "with modern (German) fingering chart for soprano recorder"
   composer = "Traditional Irish"
   arranger = "Arrangement: Dominig Bauchaud"
   enteredby = "grerika @ github"
-  lastupdated = "12/23/2019"
+  tagline = "Last update: 04/25/2020 (Gobliners)"
 }
 
 global = {
@@ -24,190 +17,39 @@ global = {
   \tempo 4. = 116
 }
 
-recorder_baroque_english = \relative c'' {
+recorder = \relative c'' {
   \global
     | 
-      b4^\markup\woodwind-diagram      #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-      e,8^\markup\woodwind-diagram     #'recorder #'((cc . (one two three four five)) (lh . (thumb)) (rh . ())) 
-      g4^\markup\woodwind-diagram      #'recorder #'((cc . (one two three))  (lh  . (thumb))  (rh . ())) 
-      e8^\markup\woodwind-diagram      #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ()))  
-      fis4.^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five six))  (lh  . (thumb))  (rh . ()))    
+      b4^\markup{Theme A} e,8 g4 e8 fis4.
     | 
-      b4^\markup\woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-      e,8^\markup\woodwind-diagram  #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ())) 
-      g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb)) (rh . ()))
-      e8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ()))  
-      fis^\markup\woodwind-diagram  #'recorder #'((cc . (one two three five six))  (lh  . (thumb))  (rh . ()))    
-      e^\markup\woodwind-diagram    #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ())) 
-      d^\markup\woodwind-diagram    #'recorder #'((cc . (one two three four five six))  (lh  . (thumb))  (rh . ())) 
+      b4 e,8 g4 e8 fis e  d
     | 
-      b'4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-      e,8^\markup\woodwind-diagram  #'recorder #'((cc . (one two three four five))  (lh . (thumb)) (rh . ()))  
-      g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb))  (rh . ()))  
-      e8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ()))  
-      fis4.^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five six))  (lh  . (thumb)) (rh . ()))    
+      b'4  e,8 g4 e8 fis4.
     |
-      b4^\markup\woodwind-diagram   #'recorder #'((cc . (one))  (lh  . (thumb)) (rh . ()))
-      d8^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-      d4^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-      b8^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb)) (rh . ()))
-      a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-      fis^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five six))  (lh  . (thumb)) (rh . ()))  
-      d^\markup\woodwind-diagram   #'recorder #'((cc . (one two three four five six))  (lh  . (thumb))  (rh . ())) 
+      b4   d8  d4 b8  a8 fis8  d8
    \bar ":|.|:" \break
     | 
-        b'4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        c8^\markup \woodwind-diagram #'recorder #'((cc . (two))  (lh . (thumb))   (rh . ()))
-        e4^\markup \woodwind-diagram   #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        fis8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five))  (lh  . (thumb1h)) (rh . ()))  
-        g4.^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
+        b'4^\markup{Theme B}  c8  e4   fis8   g4.
     |         
-        b,4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        c8^\markup \woodwind-diagram #'recorder #'((cc . (two))  (lh . (thumb))   (rh . ()))
-        g'4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        e8^\markup \woodwind-diagram #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        d^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
+        b,4  c8  g'4   e8    d  b a
     | 
-        b4^\markup\woodwind-diagram #'recorder  #'((cc . (one)) (lh . (thumb)) (rh . ())) 
-        c8^\markup \woodwind-diagram #'recorder #'((cc . (two))  (lh . (thumb))   (rh . ()))
-        e4^\markup \woodwind-diagram #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        fis8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five))  (lh  . (thumb1h)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb1h)) (rh . ()))  
+        b4   c8  e4   fis8   g4 a8 
     |           
-        b4^\markup \woodwind-diagram  #'recorder #'((cc . (one two four five))  (lh . (thumb1h))   (rh . ()))
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb1h)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        e8^\markup \woodwind-diagram  #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        d^\markup\woodwind-diagram    #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        a^\markup\woodwind-diagram    #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
+        b4   a8  g4    e8    d b
+        a
    \bar ":|.|:"  \break
     | 
-        b4.^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        b4
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb)) (rh . ()))
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
+        b4.^\markup{Theme C}    b4  a8  g4    a8
     |
-        b4.^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        b8^\markup\woodwind-diagram   #'recorder #'((cc . (one))  (lh  . (thumb))  (rh . ()))
-        a^\markup\woodwind-diagram    #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-        b^\markup \woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        d^\markup\woodwind-diagram    #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        a^\markup\woodwind-diagram    #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
+        b4.   b8 a  b  d  b  a
     | 
-        b4.^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        b4
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb)) (rh . ())) 
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-    |
-        b4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        d8^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        e8^\markup\woodwind-diagram  #'recorder #'((cc . (one two three four five))  (lh . (thumb1h)) (rh . ()))  
-        d^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
+        b4.  b4  a8  g4  a8
+    | 
+        b4  d8  g4  e8  d  b
+        a
   \bar ":|."
 }
 
-
-recorder_modern_german = \relative c'' {
-  \global
-    | 
-      b4^\markup\woodwind-diagram      #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-      e,8^\markup\woodwind-diagram     #'recorder #'((cc . (one two three four five)) (lh . (thumb)) (rh . ())) 
-      g4^\markup\woodwind-diagram      #'recorder #'((cc . (one two three))  (lh  . (thumb))  (rh . ())) 
-      e8^\markup\woodwind-diagram      #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ()))  
-      fis4.^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five six seven))  (lh  . (thumb))  (rh . ()))    
-    | 
-      b4^\markup\woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-      e,8^\markup\woodwind-diagram  #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ())) 
-      g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb)) (rh . ()))
-      e8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ()))  
-      fis^\markup\woodwind-diagram  #'recorder #'((cc . (one two three five six seven))  (lh  . (thumb))  (rh . ()))    
-      e^\markup\woodwind-diagram    #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ())) 
-      d^\markup\woodwind-diagram    #'recorder #'((cc . (one two three four five six))  (lh  . (thumb))  (rh . ())) 
-    | 
-      b'4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-      e,8^\markup\woodwind-diagram  #'recorder #'((cc . (one two three four five))  (lh . (thumb)) (rh . ()))  
-      g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb))  (rh . ()))  
-      e8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three four five))  (lh  . (thumb))  (rh . ()))  
-      fis4.^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five six seven))  (lh  . (thumb)) (rh . ()))    
-    |
-      b4^\markup\woodwind-diagram   #'recorder #'((cc . (one))  (lh  . (thumb)) (rh . ()))
-      d8^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-      d4^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-      b8^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb)) (rh . ()))
-      a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-      fis^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five six seven))  (lh  . (thumb)) (rh . ()))  
-      d^\markup\woodwind-diagram   #'recorder #'((cc . (one two three four five six))  (lh  . (thumb))  (rh . ())) 
-   \bar ":|.|:" \break
-    | 
-        b'4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        c8^\markup \woodwind-diagram #'recorder #'((cc . (two))  (lh . (thumb))   (rh . ()))
-        e4^\markup \woodwind-diagram   #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        fis8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five seven))  (lh  . (thumb1h)) (rh . ()))  
-        g4.^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-    |         
-        b,4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        c8^\markup \woodwind-diagram #'recorder #'((cc . (two))  (lh . (thumb))   (rh . ()))
-        g'4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        e8^\markup \woodwind-diagram #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        d^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-    | 
-        b4^\markup\woodwind-diagram #'recorder  #'((cc . (one)) (lh . (thumb)) (rh . ())) 
-        c8^\markup \woodwind-diagram #'recorder #'((cc . (two))  (lh . (thumb))   (rh . ()))
-        e4^\markup \woodwind-diagram #'recorder #'((cc . (one two three four five seven)) (lh . (thumb1h)) (rh . ())) 
-        fis8^\markup\woodwind-diagram   #'recorder #'((cc . (one two three five))  (lh  . (thumb1h)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb1h)) (rh . ()))  
-    |           
-        b4^\markup \woodwind-diagram #'recorder #'((cc . (one two four five))  (lh . (thumb1h))   (rh . ()))
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb1h)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        e8^\markup \woodwind-diagram #'recorder #'((cc . (one two three four five)) (lh . (thumb1h)) (rh . ())) 
-        d^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-   \bar ":|.|:"  \break
-    | 
-        b4.^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        b4
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb)) (rh . ()))
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-    |
-        b4.^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        b8^\markup\woodwind-diagram   #'recorder #'((cc . (one))  (lh  . (thumb))  (rh . ()))
-        a^\markup\woodwind-diagram    #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-        b^\markup \woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        d^\markup\woodwind-diagram    #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram   #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ())) 
-        a^\markup\woodwind-diagram    #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-    | 
-        b4.^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        b4 
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb)) (rh . ())) 
-        a8^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-    |
-        b4^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        d8^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        g4^\markup\woodwind-diagram   #'recorder #'((cc . (one two three))  (lh  . (thumb1h)) (rh . ()))
-        e8^\markup\woodwind-diagram  #'recorder #'((cc . (one two three four five))  (lh . (thumb1h)) (rh . ()))  
-        d^\markup\woodwind-diagram   #'recorder #'((cc . (two))  (lh  . ()) (rh . ()))
-        b^\markup \woodwind-diagram #'recorder #'((cc . (one))  (lh . (thumb))   (rh . ()))
-        a^\markup\woodwind-diagram   #'recorder #'((cc . (one two))  (lh  . (thumb)) (rh . ()))  
-  \bar ":|."
-}
 
 harp =  \relative c {
   \clef bass
@@ -230,8 +72,13 @@ harp =  \relative c {
 }
 
 <<
-  \new Staff \recorder_baroque_english
-  %\new Staff \recorder_modern_german
-  \new Staff \harp 
+  \new Staff  \with {
+      instrumentName = "Flute"
+      %shortInstrumentName = "F"
+    } \recorder
+  \new Staff  \with {
+      instrumentName = "Harp"
+      %shortInstrumentName = "H"
+    } \harp 
 >>
 
