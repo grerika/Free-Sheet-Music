@@ -55,11 +55,11 @@ flute = \relative c'{
        b'8 r e e4 fis8 | e d b a g a | b r e e4 fis8 e d b d4.
        b8 r e e4 fis8 | g fis e fis e d e d b d b a |
        b a g a g fis |
-       e e e g fis e | b' a b d b a | b b b b a g | g a b a fis d |
+       e e e g fis e | b' a b d b a | b b b b a b | g a b a fis d |
        e e e g fis e | b' a b d b a | b a g fis16 g a8 fis g e e e4. 
        \bar "||"
        e8 e e g fis e | b' a b d b a | b b b b a b | g a b a fis d | 
-       e e e g fis e | b' a b d b a | g a g fis16  g a8 fis | g e e e4. 
+       e e e g fis e | b' a b d b a | b a g fis16  g a8 fis | g e e e4.
        \bar "||"
        e'4 fis8 g fis e|  g4 a8 b a g | 
        d4 e8 fis e d | a' fis d fis e d |

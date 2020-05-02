@@ -1,5 +1,5 @@
 #(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 18)
+%#(set-global-staff-size 24)
 
 \version "2.18.2"
 \header {
@@ -23,8 +23,7 @@ flute = \relative c'{
       \repeat volta 2 {
          g \mark \markup { \musicglyph #"scripts.segno" } e e a e e      | 
         b' e, e c' b a | b e, e e d e   | fis a g fis e fis | 
-        \bar "||"
-        \break
+        %\bar "||"
         g e e a e e |  b' e, e c' a b | c a g a b c |
         %\bar "||"
       }
@@ -32,7 +31,7 @@ flute = \relative c'{
         {d c b a g fis }
         {d' c b a g a}
       }
-      
+      \break
       \repeat volta 2 {   
         b r e e4 fis8 | e8 d b a g a | b r e e4 fis8 |
         e d b d4. | b8 r e e4 fis8 | g fis e fis e d| 
@@ -42,7 +41,7 @@ flute = \relative c'{
            {e' d b d b a  |  b a g a g fis 
                \mark \markup { \musicglyph #"scripts.coda" "" } }
       }
-      %
+      \break
       \repeat volta 2 {
         g e e a e e | b' e, e c' b a | b e, e e d e |
         fis a g fis e fis g e e a e e | b' e, e c' a b | c a g a b c |
@@ -51,6 +50,7 @@ flute = \relative c'{
          { d c b a g fis }
          { d' c b a g a }
       }
+      \break
       \repeat volta 2 {
          b8 r e8 e4 fis8 | e d b a g a | b r e e4 fis8 e d b d4. |
          b8 r e8 e4 fis8 | g fis e fis e d | 
@@ -59,22 +59,21 @@ flute = \relative c'{
         {e d b a g a | b e, e e4 r8 }
         {e' d b d b a | b a g a g fis }
       }       
-       e e e g fis e | b' a b d b a | b b b b a g | g a b a fis d |
+      \break
+      \bar ".|:"
+       e e e g fis e | b' a b d b a | b b b b a b | g a b a fis d |
        e e e g fis e | b' a b d b a | b a g fis16 g a8 fis g e e e4. 
-       \bar "||"
-       e8 e e g fis e | b' a b d b a | b b b b a b | g a b a fis d | 
-       e e e g fis e | b' a b d b a | g a g fis16  g a8 fis | g e e e4. 
-       \bar "||"
-       e'4 fis8 g fis e|  g4 a8 b a g | 
-       d4 e8 fis e d | a' fis d fis e d |
-       e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis |
-       e' b e d g fis   | e4 fis8 g fis e | g4 a8 b a g 
-       d4 e8 fis e d | a' fis d fis e d |
-       e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis |
-%    \alternative {
-     %   \set Score.repeatCommands = #(list (list 'volta voltaAdLib) )
-         {g e e e e fis}
- %    }
+      \bar ":|."
+      \break
+      \repeat volta 2 {
+       e'4 fis8 g fis e|  g4 a8 b a g | d4 e8 fis e d | a' fis d fis e d |
+       e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis
+      }
+      \alternative {
+        %\set Score.repeatCommands = #(list (list 'volta voltaAdLib) )
+         { e' b e d g fis }
+         { g,^\markup { \small \italic "D.S. al Coda"} e e e e fis }
+     }
     \bar ":|."
      \mark \markup { \musicglyph #"scripts.coda" "" } e2.   (e) (e) (e) 
      \bar "|."
