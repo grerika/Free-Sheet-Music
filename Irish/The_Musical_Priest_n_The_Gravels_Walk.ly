@@ -3,7 +3,7 @@
 
 \version "2.18"
 \header {
-  title = "The Musical Priest + The Gravel's Walk"
+  title = "The Musical Priest + The Gravel walk"
   enteredby = "grerika @ github"
   tagline = "Last update: 05/02/2020 (Gobliners)"
 }
@@ -32,7 +32,7 @@ musicalpriest = \relative c''{
     }
     \alternative {
       { d8 cis b cis d fis a fis | e d cis d b4 } %\break
-      { d8 cis b cis d b' a fis   e d cis d b4 }
+      {d8 cis b cis d b' a fis   e d cis d b4 }
     }
     b8 cis |
     d b b4\mordent b'8 a fis b 
@@ -95,7 +95,7 @@ gravelswalk = \relative c'' {
 
 
 \score {
-  \header { piece = "The Gravel Walks (reel)" }
+  \header { piece = "The Gravel walk (reel)" }
   \new Staff {
     <<
     \chords { 
