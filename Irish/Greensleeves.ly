@@ -1,13 +1,11 @@
 #(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 19 )
+#(set-global-staff-size 19.5 )
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "Greensleves"
-  %arranger = "Traditional Irish"
   enteredby = "grerika @ github"
-  lastupdated = "11/30/2019"
-  tagline = "Gobliners"  
+  tagline = "Last update: 11/30/2019 (Gobliners)"
 }
 
 global = {
@@ -18,13 +16,13 @@ global = {
 
 DCfine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.C. al fine" }
+  \mark \markup { \tiny "D.C. al fine" }
 }
 
 
 Fine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small \italic "fine" }
+  \mark \markup { \tiny \italic "fine" }
 }
 
 
@@ -58,9 +56,9 @@ voice = \relative c'' {
    | e'8^C c d e f g | b,^G g a b c d | c^Amin a c b^E gis e | a4.^Amin a4.
   \bar "||"
    | c8^C g' f e d c | g^G d' c b a g | a^Amin e' d c b a | e^E b' a gis fis e 
-   | c'8^C g' f e d c | g^G d' c b a g | a^Amin e' d16 c b^E a gis fis gis e | a4.^Amin \DCfine a4.
+   | c'8^C g' f e d c | g^G d' c b a g | a^Amin e' d16 c b^E a gis fis gis e |
+   a4.^Amin a4. \DCfine
   \bar "||"
-    
 }
 
 \score {

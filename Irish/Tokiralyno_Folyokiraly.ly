@@ -1,13 +1,12 @@
 #(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 24 )
+%#(set-global-staff-size 24 )
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "Tókirálynő, Folyókirály"
   arranger = "Erdei Rezervátum"
   enteredby = "grerika @ github"
-  lastupdated = "11/30/2019"
-  tagline = ""
+  tagline = "Last update: 11/30/2019 (Gobliners)"
 }
 
 global = {
@@ -33,8 +32,11 @@ voice = \relative c'' {
   \global
   \dynamicUp
    | a2^Am\< c4 | e2 g4 | fis2^Em g4 | e2 d4 | a2^Am c4 | e2 d4 | b2^Em c4 \!| b2 r4 
+   \break
    | a2^Am c4 | e2 g4 | fis2^Em g4 | e2 d4 | a2^Am c4 | b2^G c4 | b2^Em e4 | a,2^Am r4
+   \break
    | a'2^Am\> g4 | fis2 g4 | fis2^Em e4 | dis2 e4 | a2^Am g4 | fis2 e4 | fis2^Em e4 | g2^G r4\!
+   \break
    | a2^Am g4 | fis2 e4 | dis2^Em e4 | c2 b4 | a2^Am c4 | b2^G c4 | b2^Em e4 | a,2^Am r4 
   \bar ":|."
     

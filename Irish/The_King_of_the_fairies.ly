@@ -1,5 +1,5 @@
 #(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 24)
+%#(set-global-staff-size 24)
 
 \version "2.18"
 \header {
@@ -34,6 +34,7 @@ voice = \relative c'{
         { e2^Em e4. d8  |}
         { e2^Em e4. b'8 |}
     }	 
+    \break
         e4^Em e b8.[ d16 e8. fis16 ] | 
         g8.^Em [a16 g8. fis16 ]e4. fis8 | 
         e4^Em b b8. [a16 b8. cis16] | 

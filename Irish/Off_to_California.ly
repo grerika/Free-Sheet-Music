@@ -1,13 +1,12 @@
+%#(set-default-paper-size "a4" 'portrait)
 #(set-default-paper-size "a5" 'landscape)
-#(set-global-staff-size 22)
+%#(set-global-staff-size 22)
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "Off To California"
-  arranger = ""
   enteredby = "grerika @ github"
-  lastupdated = "11/28/2019"
-  tagline = "Gobliners"
+  tagline = "Last update: 11/28/2019 (Gobliners)"
 }
 
 global = {

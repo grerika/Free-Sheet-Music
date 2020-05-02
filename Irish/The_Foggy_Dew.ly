@@ -7,7 +7,7 @@
   title = "The Foggy Dew"
   arranger = "Traditional Irish Tune"
   enteredby = "grerika @ github"
-  tagline = "Last updated: 04/11/2020 (Gobliners)"  
+  tagline = "Last update: 04/11/2020 (Gobliners)"  
   %instrument = "Tenor recorder"
 }
 

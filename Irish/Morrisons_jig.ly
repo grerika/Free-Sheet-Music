@@ -1,13 +1,13 @@
-#(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 26)
+%#(set-default-paper-size "a4" 'portrait)
+#(set-default-paper-size "a5" 'landscape)
+%#(set-global-staff-size 26)
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "Morrison's Jig"
   arranger = "Traditional Irish"
   enteredby = "grerika @ github"
-  lastupdated = "11/22/2019"
-  tagline = "Gobliners"  
+  tagline = "Last update: 11/22/2019 (Gobliners)"
 }
 
 global = {
