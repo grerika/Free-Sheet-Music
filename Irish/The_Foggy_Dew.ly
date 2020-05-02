@@ -25,8 +25,10 @@ voice = \relative c'{
    \bar ".|:" 
        e4 d8 b | e4 d8 b | a4 b | d,4 e8 fis | g [b a g] | e4. d8 | e2 ( e4)
    \bar ":|."
+   \break
      b'8 d  e4 d8 b | e4 d8 b | a4 b | d,4 e8 fis | g [b a g] | e4. d8 | e2 ( e4)
    \bar "||"
+   \break
     e8 fis | g4 b | d c8 b | a4 a | b4 g8 a | b4 g'8 fis |  e8 [ d b d ] | e2 ( e4) 
    \bar "||"
    b8 d | e4 d8 b | e4 d8 b | a4^\markup{ritenuto} b | d,4 e8 fis | g8 [b a g] | e4. d8 | e2 ( e4) r4

@@ -2,12 +2,13 @@
 #(set-default-paper-size "a5" 'landscape)
 %#(set-global-staff-size 26)
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "The Swallowtail"
   arranger = "Traditional Irish"
   enteredby = "grerika @ github"
-  tagline = "Last update: 11/22/2019 (Gobliners)"
+  tagline = ""
+  %tagline = "Last update: 11/22/2019 (Gobliners)"
 }
 
 global = {

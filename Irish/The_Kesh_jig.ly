@@ -1,13 +1,15 @@
-%#(set-default-paper-size "a5" 'landscape)
-#(set-default-paper-size "a4" 'portrait)
+#(set-default-paper-size "a5" 'landscape)
+%#(set-default-paper-size "a4" 'portrait)
 %#(set-global-staff-size 26)
 
 \version "2.18"
 \header {
   title = "The Kesh"
+  subtitle = "(play everything 2 times)"
   arranger = "Traditional Irish"
   enteredby = "grerika @ github"
-  tagline = "Last update: 11/22/2019 (Gobliners)"
+  tagline = ""
+  %tagline = "Last update: 11/22/2019 (Gobliners)"
 }
 
 global = {

@@ -1,13 +1,13 @@
-#(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 26)
+#(set-default-paper-size "a5" 'landscape)
+%#(set-default-paper-size "a4" 'portrait)
+%#(set-global-staff-size 26)
 
-\version "2.16.2"
+\version "2.18"
 \header {
   title = "Merrily Kissed The Quaker's Wife"
   arranger = "Traditional Irish"
- enteredby = "grerika @ github"
-  lastupdated = "11/28/2019"
-   tagline = "Gobliners"  
+  enteredby = "grerika @ github"
+  tagline = "Last update: 11/28/2019 (Gobliners)"
 }
 
 global = {
