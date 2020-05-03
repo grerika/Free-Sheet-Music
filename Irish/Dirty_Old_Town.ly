@@ -23,7 +23,7 @@ flute = \relative c' {
     | b1^\markup{B} (b4) a8^\markup{G} g^\markup{A} b4^\markup{B} g^\markup{G} |
     d1^\markup{D} (d2) b'4^\markup{B} d^\markup{D} | 
     e1^\markup{E} (e4) d8^\markup{D} b^\markup{B} a4^\markup{A} g^\markup{G} |
-    b1^\markup{D} (b4) r e^\markup{E} d^\markup{D} | b1^\markup{B} (b4) a8^\markup{G} g^\markup{A} b4^\markup{B} g^\markup{G} |
+    b1^\markup{D} b4 r e^\markup{E} d^\markup{D} | b1^\markup{B} (b4) a8^\markup{G} g^\markup{A} b4^\markup{B} g^\markup{G} |
     d1^\markup{D} (d2) e8^\markup{D} g^\markup{G} b4^\markup{B} | 
     a1^\markup{A} (a4) r a8^\markup{A} g^\markup{G} e4^\markup{E} | e1^\markup{E} (e4)
     \bar "||"
@@ -32,7 +32,7 @@ flute = \relative c' {
 
 verseENG = \lyricmode {
   % Lyrics follow here.
-  I met my love by the gas yard wall dreamed the dream by the old ca-nal
+  I met my love by the gas yard wall dreamed the dream by the old ca -- nal
   I kissed my girl by the f -- ory wall dir -- ty old town dir -- ty old town.
 }
 
