@@ -3,7 +3,7 @@
 
 \version "2.18"
 \header {
-  title = "The Harvest Home + Off to California"
+  title = "Harvest Home + Off to California"
   enteredby = "grerika @ github"
   tagline = "Last update: 05/02/2019 (Gobliners)"
 }
@@ -68,8 +68,8 @@ offtocalifornia = \relative c'{
        | g8^\markup{G} fis g d e^\markup{Em} d b g |
      }
      \alternative {
-      { \tuplet 3/2 {a8^\markup{D} b a} \tuplet 3/2 {fis4 a g^\markup{G}} \tuplet 3/2 { d8 e fis} |}
-      { \tuplet 3/2 {a8^\markup{D} b a} \tuplet 3/2 {fis4 a g^\markup{G}} \partial  4\tuplet 3/2 { d'8 e fis} }
+      { \tuplet 3/2 {a8^\markup{D} b a} fis8 a g4^\markup{G} \tuplet 3/2 { d8 e fis} |}
+      { \tuplet 3/2 {a8^\markup{D} b a} fis8 a g4^\markup{G} \partial  4\tuplet 3/2 { d'8 e fis} }
     }	
       \repeat volta 2 {
         | g^\markup{E} fis e g fis^\markup{Bm} e d fis
@@ -81,18 +81,24 @@ offtocalifornia = \relative c'{
         | g8^\markup{G} fis g d e^\markup{Em} d b g
          }
          \alternative {
-            { \tuplet 3/2 {a8^\markup{D} b a} \tuplet 3/2 {fis4 a g} \tuplet 3/2 {d'8^\markup{G} e fis} }
-            { \tuplet 3/2 {a,8^\markup{D} b a} \tuplet 3/2 {fis4 a g} d4^\markup{G} }
+            { \tuplet 3/2 {a8^\markup{D} b a} 	fis8 a g4 \tuplet 3/2 {d'8^\markup{G} e fis} }
+            { \tuplet 3/2 {a,8^\markup{D} b a} 	fis8 a g4 (g4^\markup{G}) }
          }
    \bar "|."
 }
 
 \score {
-  \header { piece = "The Harvest Home" }
+  \header { 
+      piece = "Harvest Home" 
+      opus = "Irish Hornpipe"
+  }
   \new Staff { \harvesthome }
 }
 
 \score {
-  \header { piece = "Off to California" }
+  \header { 
+    piece = "Off to California" 
+    opus = "Irish Hornpipe"
+  }
   \new Staff { \offtocalifornia }
 }
