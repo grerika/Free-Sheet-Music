@@ -28,7 +28,7 @@ swallowtail = \relative c' {
 }
 
 
-voice = \relative c' {
+morrisons = \relative c' {
   \global
   \dynamicUp
   \bar ".|:" 
@@ -62,5 +62,5 @@ voice = \relative c' {
     piece = "Morrison's jig"
     arranger = "Traditional Irish"
   }
-  \new Staff { \swallowtail }
+  \new Staff { \morrisons }
 }
