@@ -4,9 +4,11 @@
 \version "2.18"
 \header {
   title = "Tókirálynő, Folyókirály"
-  arranger = "Erdei Rezervátum"
+  arranger = "Dallam és szöveg: Csanádi Viktor"
+  composer = "Erdei Rezervátum"
   enteredby = "grerika @ github"
-  tagline = "Last update: 11/30/2019 (Gobliners)"
+  %tagline = "Last update: 05/03/2020 (Gobliners)"
+  tagline = "Last update: 05/03/2020"
 }
 
 global = {
