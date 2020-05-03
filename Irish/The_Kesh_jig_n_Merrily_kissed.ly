@@ -4,9 +4,9 @@
 
 \version "2.18"
 \header {
-  title = "The Kesh jig + Merrily kissed the Quaker's Wife"  
+  title = "The Kesh + Merrily kissed the Quaker's Wife"  
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/02/2019 (Gobliners)"
+  tagline = "Last update: 05/03/2019 (Gobliners)"
 }
 
 global = {
@@ -38,22 +38,22 @@ merrily = \relative c' {
   \dynamicUp
   \partial 8
 %\bar ".|:"
-d8^\markup{Viktor}
+  d8%^\markup{\italic V} %Viktor
     | g^G a b d,4 b'8 c4^C a8 b^G g e
     | g^G a b d, e g a4.^D a8 g8 e
     | g^G a b d,4 b'8
     | c4^C a8 b^G g e
-    | g^G a b d,4^D e8 g2^G  r8  d8^\markup{Erika is}
+    | g^G a b d,4^D e8 g2^G  r8  d8%^\markup{V + E} %Viktor + Erika
     | g8 a b d,4 b'8 c4 a8 b g e
     | g a b d,8 e8 g8 a4 a8 a4 e8
     | g a b d,4 b'8  c4 a8 b g e
     | g a b d,8 e fis g4 g8 g4 
   \bar "||" %\bar ":|.|:"
-    | a8^\markup{Erika}
+    | a8%^\markup{E}
     |  b8^G g g a^D g g b^G g g a^C g e
     | g^G a b d, e g a4.^D a8 g a
     | b^G g g a^D g g b^G g g a^C g e
-    |  g^G a b  d,4^D e8 g2^G r8 g8^\markup{Viktor is}
+    |  g^G a b  d,4^D e8 g2^G r8 g8%^\markup{E + V}
     |   b8^G g g a^D g g b^G g g a^C g e
     | g^G a b d,4 e8 a4^D  a8 a4.
     | g8^G a g fis8^D g fis
@@ -72,7 +72,8 @@ d8^\markup{Viktor}
 
 \score {
   \header {
-    piece = "The Kesh jig"
+    piece = "The Kesh"
+    opus = "jig"
     %arranger = "Traditional Irish"
   }
   \new Staff { \keshjig }
