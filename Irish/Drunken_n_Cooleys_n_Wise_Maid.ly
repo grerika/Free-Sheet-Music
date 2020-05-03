@@ -4,9 +4,9 @@
 
 \version "2.18"
 \header {
-  title = "Te Drunken Landlady + Cooley's + The Wise Maid"
+  title = "The Drunken Landlady + Cooley's + The Wise Maid"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/02/2020 (Gobliners)"  
+  tagline = "Last update: 05/03/2020 (Gobliners)"
 }
 
 global = {
