@@ -64,7 +64,7 @@ verse = \lyricmode {
 
 
 
-\markup {
+\markup \small {
   \fill-line {
     \hspace #0.2 % moves the column off the left margin;
      % can be removed if space on the page is tight
@@ -72,27 +72,26 @@ verse = \lyricmode {
       \line { \bold "1."
         \column {
           "Július negyedik napja, ezernyolcszázhat,"
-          "Kihajóztunk cork hideg kikötőjéből"
+          "Kihajóztunk Cork hideg öbléből"
           "A raktérben egy nagy halom tégla is akadt"
-          "Amiből majd a new yorki ház épül"
+          "Amiből majd a new-yorki ház épül"
           "Csodás hajó volt, tele mindenféle jóval,"
-          "Összetákolt tattal és orral"
-          "A szél repítette és ő volt Irish Rover,"
-          "Rozogább lett minden egyes nappal."
+          "     összetákolt tattal és oorral"
+          "A szél repítette és ő volt Irish Roveer,"
+          "     rozogább lett minden egyes nappal"
         }
       }
       \combine \null \vspace #1.1 % adds vertical spacing between verses
       \line { \bold "2."
         \column {
-          "Vittünk egymillió zsákkal sligo rongyból mákkal,"
+          "Vittünk egymillió zsákkal Sligo rongyból mákkal,"
           "És kétmillió hordót teli kővel,"
-          "Hárommillió véget, vak lóbőrt mi béget,"
-          "És négymillió hordó csontot csőrrel,"
-          "Ötmillió kutyát, de malacból is dukált,"
-          "Hétmillió hordót teli sörrel"
+          "Hárommillió véget, vak lóbőrt mi béget"
+          "És négymillió hordó csontot csőrrel"
+          "Ötmillió kutyát, de malacból is dukált"
+          "Hétmillió hordót teli söörrel"
           "Még nyolcmillió tarka kecskemama farka"
-          "Ez mind az öreg hajóra volt rakva."
-          ""
+          "Ez mind az öreg hajóra volt rakva"
         }
       }
     }
@@ -101,34 +100,34 @@ verse = \lyricmode {
       \line { \bold "3."
         \column {       
           "Micky volt legényem, ki fuvolált keményen,"
-          "A hölgyek mind elolvastak tőle"
-          "Bár nem volt túlzón magas, ..."
-          "    mégis úgy sétált mint kakas"
+          "A hölgyek mind elolvadtak tőle"
+          "Bár nem volt túlzón magas,"
+          "        mégis úgy sétált mint kakas"
           "Minden lánynak borzongott a bőre"
           "A beszéde ékes, és a tánca sem oly rémes"
           "Bárkit meghódított, ki a fedélközbe nyitott"
-          "Így hajóztunk páran, feledve, vidáman"
-          "(És) az Irish Rover repített el minket."
+          "Így hajóztunk páran, mulatva, vidáman"
+          "És az Irish Rover repített el minket"
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "4."
         \column {               
-          "Már hét éve hajóztunk, mikor a kanyaró is kitört"
-          "És eltűntünk a ködök tengerén"
-          "Szép lassan elfogytunk, s csak ketten maradtunk"
-          "A kapitány úr kutyája meg én"
-          "Hajónk sziklának ment, ott hol senki meg nem ment"
-          "A kutya is beesett a vízbe"
-          "De sok lóherét evett, így szerencsésen esett,"
-          "Megúszta és békesen a portra evezzett."
+            "Már hét éve hajóztunk, mikor (a) kanyaró is kitört"
+            "És eltűntünk a ködök tengerén"
+            "Szép lassan elfogytunk, s csak ketten maradtunk"
+            "A kapitány úr kutyája meg én"
+            "Hajónk sziklának ment, ott hol senki meg nem ment"
+            "A kutya is kiesett a víízbe"
+            "De sok lóherét evett, így szerencsésen esett,"
+            "     megúszta és békésen a partra evezett"
         }
       }
        \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line {
           \column {  \bold "Vége."
-             "Így én vagyok a rover utolsó legénye"
-             "És ez bizony a mesének a nagyon boldog vége."
+            "Így én vagyok a Rover utolsó legénye"
+            "És ezzel a mesének is itt a boldog vége"
           }
       }
     }
