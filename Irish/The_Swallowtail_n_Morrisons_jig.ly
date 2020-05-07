@@ -17,35 +17,43 @@ swallowtail = \relative c' {
   \global
   \dynamicUp
   \bar ".|:" 
-    g'8^Em e e b' e, e | g e g b a g | fis^D d d a' d, d | d' cis d a g fis | 
-    g^Em e e b' e, e | g e g b4 cis8 | d8^D cis d a g fis | g^Em e e e4. |
+    g'8 e e b' e, e | g e g b a g | fis d d a' d, d | d' cis d a g fis | 
+    g e e b' e, e | g e g b4 cis8 | d8 cis d a g fis | g e e e4. |
   \bar ":|.|:"
   \break
-    b'8^Em cis d e4 fis8 | e4 fis8 e d b | b^D cis d e4 fis8 | e d b d4. |
+    b'8 cis d e4 fis8 | e4 fis8 e d b | b cis d e4 fis8 | e d b d4. |
     \break
-    b8^Em cis d e4 fis8 | e4 fis8 e d b | d^D cis d a g fis | g^Em e e e4. 
+    b8 cis d e4 fis8 | e4 fis8 e d b | d cis d a g fis | g e e e4. 
   \bar ":|."
 }
 
+
+harmoniesSwallowTail = \chordmode {
+    e2.:m e:m d d e:m e:m d e:m
+    e2.:m e:m d d e:m e:m d e:m
+}
 
 morrisons = \relative c' {
   \global
   \dynamicUp
   \bar ".|:" 
-  e4^Em b'8 e,4 b'8 | e,4 b'8 a8^D fis d | 
-  e4.^Em b'4 cis8 | d8^G cis b a^D fis d | 
-  e4^Em b'8 e,4 b'8 |  e,4 b'8  a8^D fis d | 
-  g4^G g8 fis g a | b a g fis^D e d |
+  e4 b'8 e,4 b'8 | e,4 b'8 a8 fis d | 
+  e4. b'4 cis8 | d8 cis b a fis d | 
+  \break
+  e4 b'8 e,4 b'8 |  e,4 b'8  a8 fis d | 
+  g4 g8 fis g a | b a g fis e d |
   \bar ":|.|:"
-  b'^Em e e fis e e | a e e fis e d | 
-  b e e fis e e |   a4^D g fis | 
-  b,8^E e e fis e e| a e e fis e fis | 
-  g^G fis e d4^D a8 | b8^Em a g fis^D e d 
+  \break
+  b' e e fis e e | a e e fis e d | 
+  b e e fis e e |   a4 g fis | 
+  b,8 e e fis e e| a e e fis e fis | 
+  g fis e d4 a8 | b8 a g fis e d 
   \bar ":|.|:"
-  b'^Em e e fis e e | a e e fis e e | 
-  b e e fis e fis | g^G a g d^D e fis | 
-  g4^G g8 g fis e | d^D e fis g4^G d8 | 
-  e^Em d cis d4^D a8 | b^G a g fis^D e d 
+  \break
+  b' e e fis e e | a e e fis e e | 
+  b e e fis e fis | g a g d e fis | 
+  g4 g8 g fis e | d e fis g4 d8 | 
+  e d cis d4 a8 | b a g fis e d 
   \bar "||"
     e2.^\markup{\italic end} 
   \bar "|." 
@@ -55,13 +63,25 @@ morrisons = \relative c' {
 
 
 
+harmoniesMorrisons = \chordmode {
+     e2.:m e4.:m d e2.:m  g4. d e2.:m e4.:m d g2. g4. d
+     e2.:m e e d e e g4.    d e:m d
+     e2.:m e:m e:m g4. d g2. 
+     d4. g e:m d g d 
+}
 
 \score {
   \header {
     piece = "The Swallowtail"
     arranger = "Traditional Irish"
   }
-  \new Staff { \swallowtail }
+  <<
+     \new ChordNames {
+        \harmoniesSwallowTail
+     }
+     \swallowtail 
+    
+  >>
 }
 
 
@@ -70,5 +90,15 @@ morrisons = \relative c' {
     piece = "Morrison's jig"
     arranger = "Traditional Irish"
   }
-  \new Staff { \morrisons }
+    <<
+       \new ChordNames {
+        \harmoniesMorrisons
+      }
+      \morrisons 
+    >>
+ 
+  \layout { }
+  \midi {
+    \tempo 2 = 90
+  }
 }
