@@ -6,7 +6,7 @@
   title = "Frank's Reel"
   %arranger = "Hornpipe, Ireland, traditional"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/01/2020 (Gobliners)"
+  tagline = "Last update: 05/07/2020 (Gobliners)"
 }
 
 global = {
@@ -53,17 +53,20 @@ flute = \relative c'{
 }
 
 
-\score {
-  
-  \new Staff {
+harmonies = \chordmode {
+    a2 d a1 d2 a b:m e a d2 a1 d2 a e a e a
+    a e a a d a d e a e a a d a e a e a
+}
+
+\score { 
     <<
-    \chords { 
-      a2 d a1 d2 a d e a d2 a1 d2 a e a e a
-      a e a a d a d e a e a a d a e a e a
-    }
+      \new ChordNames {
+        \set chordChanges = ##t
+        \harmonies
+      }
     \flute 
     >>
-  }
+ 
   \layout { }
   \midi {
     \context {
