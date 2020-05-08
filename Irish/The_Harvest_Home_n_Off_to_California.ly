@@ -5,7 +5,7 @@
 \header {
   title = "Harvest Home + Off to California"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/02/2019 (Gobliners)"
+  tagline = "Last update: 05/02/2020 (Gobliners)"
 }
 
 global = {
