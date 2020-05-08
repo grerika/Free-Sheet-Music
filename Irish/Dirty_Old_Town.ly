@@ -7,7 +7,7 @@
   composer = "Written by Ewan McColl"
   arranger = "Hungarian lyrics: Csanádi Viktor"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/03/2020 (Gobliners)"  
+  tagline = "Last update: 05/08/2020 (Gobliners)"  
 }
 
 global = {
@@ -15,17 +15,17 @@ global = {
   \time 4/4
 }
 
-flute = \relative c' {
+voice = \relative c' {
   \global
   \dynamicUp
   \partial 2.
-    d4^\markup{D} e^\markup{G} g ^\markup{A}
-    | b1^\markup{B} (b4) a8^\markup{G} g^\markup{A} b4^\markup{B} g^\markup{G} |
-    d1^\markup{D} (d2) b'4^\markup{B} d^\markup{D} | 
-    e1^\markup{E} (e4) d8^\markup{D} b^\markup{B} a4^\markup{A} g^\markup{G} |
-    b1^\markup{D} b4 r e^\markup{E} d^\markup{D} | b1^\markup{B} (b4) a8^\markup{G} g^\markup{A} b4^\markup{B} g^\markup{G} |
-    d1^\markup{D} (d2) e8^\markup{D} g^\markup{G} b4^\markup{B} | 
-    a1^\markup{A} (a4) r a8^\markup{A} g^\markup{G} e4^\markup{E} | e1^\markup{E} (e4)
+    d4 e g 
+    | b1 (b4) a8 g b4 g |
+    d1 (d2) b'4 d | 
+    e1 (e4) d8 b a4 g |
+    b1 b4 r e d | b1 (b4) a8 g b4 g |
+    d1 (d2) e8 g b4 | 
+    a1 (a4) r a8 g e4 | e1 (e4)
     \bar "||"
 }
 
@@ -63,20 +63,28 @@ verseHUNfour = \lyricmode {
   És le -- da -- ra -- bol -- lak, mint a tűz -- re való fát
 }
 
+harmonies = \chordmode {
+  d4 g a b1 r4 g8 a8 b4 g4 d1 r2 b4 d4 e1 r4 d8 b8 a4 g4 d1
+  r2 e4 d b1 r4 g8 a8 b4 g4 d1 r2 d8 g8 b4 a1 r2 a8 g8 e4 e1
+}
+
 \score {
-  \new Staff { 
-     <<
-         
-          \flute 
-    >>
-  }
-  \addlyrics { \set stanza = #"English: "  \verseENG }
+  <<
+      \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmonies
+      }
+      \voice 
+      \addlyrics { 
+        \set stanza = #"English: "  
+        \verseENG
+      }
+  >>
+
   \layout { }
   \midi {
-    \context {
-      \flute
-    }
-    \tempo 2 = 90
+    \tempo 2 = 80
   }
 }
 

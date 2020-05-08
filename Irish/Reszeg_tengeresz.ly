@@ -12,7 +12,7 @@
 global = {
   \key g \major
   \time 4/4
-    %\tempo 4 = 125
+%  \tempo 4 = 125
 }
 
 flute = \relative c'' {
@@ -20,13 +20,13 @@ flute = \relative c'' {
       b4 b8 b b4 b4  | b4 e, g b | 
       a4 a8 a a4 a4  | a4 d, fis a | 
       \break
-      b4 b8 b8 b4 b4 | b4 cis d fis | 
+      b4 b8 b8 b4 b4 | b4 cis d e | 
       d b a fis | e2 e2 
       \break
       b'2  b4 b4  | b4 e, g b | 
       a2  a4 a4  | a4 d, fis a |
       \break
-      b2  b4 b4 | b4 cis d fis | 
+      b2  b4 b4 | b4 cis d e | 
       d b a fis | e2 e2 
   
     \bar "|."

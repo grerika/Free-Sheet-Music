@@ -6,7 +6,7 @@
 \header {
   title = "The Drunken Landlady + Cooley's + The Wise Maid"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/03/2020 (Gobliners)"
+  tagline = "Last update: 05/08/2020 (Gobliners)"
 }
 
 global = {
@@ -19,17 +19,22 @@ global = {
 drunken = \relative c'' {
   \global
   \dynamicUp
-  \partial 4  d8 (cis  b\staccato^\markup{Em}  ) e, e4\mordent |
+  \partial 4  d8 (cis  b\staccato  ) e, e4\mordent |
   b'8 (a fis a b\staccato ) e, e4\mordent | 
-  b'8 (a fis b a^\markup{D} b a fis d4) a'8 \staccato g (fis a) a (d b a fis a 
-  b\staccato^\markup{Em} ) e, e4\mordent  b'8 (a fis a 
-  b a d a b a fis b a4^\markup{D}~a8 b d fis e cis | d^\markup{Bm} b a fis e4^\markup{Em})
+  b'8 (a fis b a b a fis d4) a'8 \staccato g (fis a) a (d b a fis a 
+  b\staccato ) e, e4\mordent  b'8 (a fis a 
+  b a d a b a fis b a4~a8 b d fis e cis | d b a fis e4)
   \bar ":|.|:"
-  %\break
-  fis8 (a b^\markup{Em} e) e (d e4 d8 e | fis4^\markup{D} a8 fis e fis d b a b a fis d4) 
-  a'8\staccato d,  (fis a) a (d b^\markup{Bm} a fis a b^\markup{Em} e) e (d e4 d8 e 
-  | fis4^\markup{D} a8 fis e fis d b a4~a8 b d fis e cis d^\markup{Bm} b a fis e4^\markup{Em} )
+  \break
+  fis8 (a b e) e (d e4 d8 e | fis4 a8 fis e fis d b a b a fis d4) 
+  a'8\staccato d,  (fis a) a (d b a fis a b e) e (d e4 d8 e 
+  | fis4 a8 fis e fis d b a4~a8 b d fis e cis d b a fis e4 )
   \bar ":|."
+}
+
+harmoniesDrunken = \chordmode {
+  r4 e1:m r1 d1 r1 e:m r1 d b2:m e4:m r4
+  e1:m d1 r1 r2 b2:m e1:m d1:m r1 b2:m e2:m
 }
 
 cooleys = \relative c' {
@@ -42,7 +47,7 @@ cooleys = \relative c' {
     e b' b a b4 e,8 b' | b4 a8 b d e fis g |
     a fis e cis d b a fis | d e fis d e4
   \bar ":|.|:" 
-  %\break
+  \break
     g'8 e | 
     e b b4 e8 fis g fis   | e b b4 g'8 e d b |
     a4 fis8 a d, a' fis a | a4 fis8 a d e fis g |
@@ -64,7 +69,7 @@ wisemaid = \relative c' {
       fis4. \mordent g8 fis e d e | fis a a b a fis e d | 
       d'4 \tuplet 3/2 { e8 fis g } fis8 d e cis | d b a g fis [ d ]
   \bar ":|.|:" 
-%  \break
+    \break
   fis a | 
     d4 a8 g fis d fis a | d fis a fis g fis e g |
     fis a, d fis e a, cis e | d fis e d cis a a4\mordent
@@ -77,15 +82,27 @@ wisemaid = \relative c' {
 
 \score {
   \header { piece = "The Drunken Landlady" }
-  \new Staff { \drunken }
+  <<
+     \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmoniesDrunken
+      }
+      \drunken
+  >>
 }
+
 \score {
   \header { piece = "Cooley's" }
-  \new Staff { \cooleys }
+  <<
+    \cooleys 
+  >>
 }
 \score {
   \header { piece = "The Wise Maid" }
-  \new Staff { \wisemaid }
+  <<
+    \wisemaid 
+  >>
 }
 
 

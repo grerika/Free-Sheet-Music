@@ -8,7 +8,7 @@
   composer = "Erdei Rezervátum"
   enteredby = "grerika @ github"
   %tagline = "Last update: 05/03/2020 (Gobliners)"
-  tagline = "Last update: 05/03/2020"
+  tagline = "Last update: 05/08/2020"
 }
 
 global = {
@@ -17,12 +17,10 @@ global = {
   \tempo "Adagio" 4 = 58
 }
 
-
 DCfine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
   \mark \markup { \small "D.C. al fine" }
 }
-
 
 Fine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
@@ -33,18 +31,23 @@ Fine = {
 voice = \relative c'' {
   \global
   \dynamicUp
-   | a2^Am\< c4 | e2 g4 | fis2^Em g4 | e2 d4 | a2^Am c4 | e2 d4 | b2^Em c4 \!| b2 r4 
+   | a2\< c4 | e2 g4 | fis2 g4 | e2 d4 | a2 c4 | e2 d4 | b2 c4 \!| b2 r4 
    \break
-   | a2^Am c4 | e2 g4 | fis2^Em g4 | e2 d4 | a2^Am c4 | b2^G c4 | b2^Em e4 | a,2^Am r4
+   | a2 c4 | e2 g4 | fis2 g4 | e2 d4 | a2 c4 | b2 c4 | b2 e4 | a,2 r4
    \break
-   | a'2^Am\> g4 | fis2 g4 | fis2^Em e4 | dis2 e4 | a2^Am g4 | fis2 e4 | fis2^Em e4 | g2^G r4\!
+   | a'2\> g4 | fis2 g4 | fis2 e4 | dis2 e4 | a2 g4 | fis2 e4 | fis2 e4 | g2 r4\!
    \break
-   | a2^Am g4 | fis2 e4 | dis2^Em e4 | c2 b4 | a2^Am c4 | b2^G c4 | b2^Em e4 | a,2^Am r4 
+   | a2 g4 | fis2 e4 | dis2 e4 | c2 b4 | a2 c4 | b2 c4 | b2 e4 | a,2 r4 
   \bar ":|."
     
 }
 
-
+harmonies = \chordmode {
+  a2.:m a:m e:m e:m a:m a:m e:m e:m
+  a2.:m a:m e:m e:m a:m g e:m a:m
+  a2.:m a:m e:m e:m a:m a:m e:m g
+  a2.:m a:m e:m e:m a:m g e:m a:m
+}
 
 verse = \lyricmode {
   % Lyrics follow here.
@@ -64,15 +67,22 @@ verse_second = \lyricmode {
 }
 
 \score {
-  \new Staff { \voice }
-  \addlyrics { \set stanza = #"1. " \verse }
-  \addlyrics { \set stanza = #"2. " \verse_second }
+  <<
+      \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmonies
+      }
+    \voice 
+    \addlyrics { \set stanza = #"1. " \verse }
+    \addlyrics { \set stanza = #"2. " \verse_second }
+  >>
   
   \layout { }
   \midi {
     \context {
       \voice
     }
-    \tempo 2 = 50
+    \tempo 4 = 58
   }
 }

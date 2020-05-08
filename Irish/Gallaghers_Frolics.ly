@@ -6,7 +6,7 @@
   title = "Gallagher's Frolics"
   subtitle = "jig"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/02/2020 (Gobliners)"
+  tagline = "Last update: 05/08/2020 (Gobliners)"
 }
 
 voltaAdLib = \markup {  \text \italic {  D.S. al Coda  } }
@@ -21,36 +21,37 @@ flute = \relative c'{
   \global
       r8 r4 r8 e fis  | 
       \repeat volta 2 {
-        g_\markup{Em} \mark \markup { \musicglyph #"scripts.segno" } e e a e e      | 
-        b'_\markup{Em} e, e c' b a | 
-        b_\markup{Em} e, e e d e   | 
-        fis_\markup{D} a g fis e fis | 
-        g_\markup{Em} e e a e e |  
-        b'_\markup{Em} e, e c' a b | 
-        c_\markup{G} a g a b c |
+        g\mark \markup { \musicglyph #"scripts.segno" } e e a e e      | 
+        b' e, e c' b a | 
+        b e, e e d e   | 
+        fis a g fis e fis | 
+        g e e a e e |  
+        b' e, e c' a b | 
+        c a g a b c |
       }
       \alternative {
-        {d_\markup{D} c b a g fis }
-        {d'_\markup{D} c b a g a}
+        {d c b a g fis }
+        {d' c b a g a}
       }
       \break
       \repeat volta 2 {   
-        b_\markup{Em} r e e4 fis8 | 
-        e8_\markup{Em} d b a g a | 
-        b_\markup{Em} r e e4 fis8 |
-        e_\markup{G} d b d4. | 
-        b8_\markup{D} r e e4 fis8 | 
-        g_\markup{D} fis e fis e d| 
+        b r e e4 fis8 | 
+        e8 d b a g a | 
+        b r e e4 fis8 |
+        e d b d4. | 
+        b8 r e e4 fis8 | 
+        g fis e fis e d| 
       }
       \alternative {
-           {e_\markup{Bm} d b a g a   | b e, e e4 r8 }
+           {e d b a g a   | b e, e e4 r8 }
            {e' d b d b a  |  b a g a g fis 
                \mark \markup { \musicglyph #"scripts.coda" "" } }
       }
       \break
       \repeat volta 2 {
         g e e a e e | b' e, e c' b a | b e, e e d e |
-        fis a g fis e fis g e e a e e | b' e, e c' a b | c a g a b c |
+        fis a g fis e fis |% \break
+        g e e a e e | b' e, e c' a b | c a g a b c |
       }
       \alternative {
          { d c b a g fis }
@@ -85,14 +86,36 @@ flute = \relative c'{
      \bar "|."
 }
 
+% Part A
+% Em Em | Em D | Em Em | G D
+% Em Em | Em D | Em D  | Em Em
+
+% Part B
+% Em Em | Em G | D D | D Bm
+% Em Em | D D | Em D | Em Em
+
+harmonies =  \chordmode {
+    % Theme A - Part A + B
+    r2. e:m e:m e:m d e:m e:m g d4. r d4. r
+    e2.:m e:m e:m g d d d b:m r
+    % repeat Theme A
+    r2. e:m e:m e:m d e:m e:m g d4. r d4. r
+    e2.:m e:m e:m g d d d b:m r
+    % repeat Theme A
+    r2. e:m e:m e:m d e:m e:m g d4. r d4. r
+    e2.:m e:m e:m g d d d b:m r
+}
 
 \score {
-  
-  \new Staff {
-    <<
+  <<
+      \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmonies
+      }
        \flute 
-    >>
-  }
+  >>
+  
   \layout { }
   \midi {
     \context {

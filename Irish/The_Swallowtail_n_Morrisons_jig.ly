@@ -79,9 +79,13 @@ harmoniesMorrisons = \chordmode {
      \new ChordNames {
         \harmoniesSwallowTail
      }
-     \swallowtail 
-    
+     \swallowtail
   >>
+
+  \layout { }
+  \midi {
+    \tempo 2 = 90
+  }
 }
 
 
@@ -90,12 +94,12 @@ harmoniesMorrisons = \chordmode {
     piece = "Morrison's jig"
     arranger = "Traditional Irish"
   }
-    <<
+   <<
        \new ChordNames {
         \harmoniesMorrisons
       }
       \morrisons 
-    >>
+   >>
  
   \layout { }
   \midi {
