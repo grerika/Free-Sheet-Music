@@ -52,8 +52,8 @@ verse = \lyricmode {
 
 harmonies = \chordmode {
   r4
-  g2 g c c g g c c g g c c 
-  g d c c
+  g2 g c c g g d d 
+  g g c c  g d c c
   g g d d g g d d 
   g g e:m e:m g d g g
 }
