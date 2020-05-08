@@ -35,7 +35,7 @@ harmoniesKesh = \chordmode {
 keymerrily = {
   \key g \major
   \time 12/8
-  \tempo 2 = 90
+ % \tempo 2 = 90
 }
 
 merrily = \relative c' {
