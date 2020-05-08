@@ -6,7 +6,7 @@
 \header {
   title = "The Kesh + Merrily kissed the Quaker's Wife"  
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2019 (Gobliners)"
+  tagline = "Last update: 05/08/2020 (Gobliners)"
 }
 
 global = {

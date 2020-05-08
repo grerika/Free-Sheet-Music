@@ -4,7 +4,7 @@
 \header {
   title = "The Swallowtail + Morrison's jig"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/07/2019 (Gobliners)"
+  tagline = "Last update: 05/07/2020 (Gobliners)"
 }
 
 global = {

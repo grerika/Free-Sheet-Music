@@ -6,7 +6,7 @@
   title = "The King of the Fairies"
   arranger = "Hornpipe, Ireland, traditional"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2019 (Gobliners)"
+  tagline = "Last update: 05/08/2020 (Gobliners)"
 }
 
 global = {
