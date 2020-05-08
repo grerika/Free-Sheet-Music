@@ -32,75 +32,97 @@ musicalpriest = \relative c''{
     }
     \alternative {
       { d8 cis b cis d fis a fis | e d cis d b4 } %\break
-      {d8 cis b cis d b' a fis   e d cis d b4 }
+      { d8 cis b cis d b' a fis    e d cis d b4 }
     }
-    b8 cis |
-    d b b4\mordent b'8 a fis b 
+    b8 cis | d
+    b b4\mordent b'8 a fis b
     a fis e cis a cis e cis 
     d b b4\mordent b'8 a fis b 
     a fis e cis d cis b8 a b4 
     \bar ":|."
 }
 
+harmoniesMusicalPriest = \chordmode {
+}
+
 gravelswalk = \relative c'' {
      \keygravel
      \bar ".|:"
-       a4^\markup{Am}  e'8 a,  \tuplet 3/2 {c8 b a } e'8 a, |
-       a4 e'8 a, b^\markup{G}  a g b |
-       a4^\markup{Am}  e'8 a,  \tuplet 3/2 {b c d } e8 fis |
-       g^\markup{G}  e d c b a g b
+       a4  e'8 a,  \tuplet 3/2 {c8 b a } e'8 a, |
+       a4 e'8 a, b  a g b |
+       a4  e'8 a,  \tuplet 3/2 {b c d } e8 fis |
+       g  e d c b a g b
      \bar ":|."
      \break
-       a4^\markup{Am} a'8 a, g' a, fis' a, | 
-       a4 e'8 a, b^\markup{G}  a g b | 
-       a4^\markup{Am}  a'8 a, g' a, fis' a,
-       g'^\markup{G} e d c b a g b 
+       a4 a'8 a, g' a, fis' a, | 
+       a4 e'8 a, b  a g b | 
+       a4  a'8 a, g' a, fis' a,
+       g' e d c b a g b 
      \break
-       a4^\markup{Am} a'8 a, g' a, fis' a, | 
-       a4 e'8 a, b^\markup{G}  a g b | 
-       a^\markup{Am}  b c d e fis g a | 
-       g^\markup{G} e d c b a g b 
+       a4 a'8 a, g' a, fis' a, | 
+       a4 e'8 a, b  a g b | 
+       a  b c d e fis g a | 
+       g e d c b a g b 
      \bar ".|:"
      \break
-       \tuplet 3/2 {c8^\markup{Am}  b a } b g a4 a8 b |
-       c a a d b^\markup{G}  a g b |
-       \tuplet 3/2 {c8^\markup{Am} b a} b g a b c d |
-       e^\markup{G} fis g e d b g b |
+       \tuplet 3/2 {c8  b a } b g a4 a8 b |
+       c a a d b  a g b |
+       \tuplet 3/2 {c8 b a} b g a b c d |
+       e fis g e d b g b |
      \bar ":|.|:"
      \break
      \key c \major
-      c4^\markup{C} g'8 c, a' c, g' c, |
-      c4 g'8 c, b^\markup{G} a g b |
-      c4^\markup{C} g'8 c, a' c, g' a |
-      g^\markup{G} e d c b a g b
+      c4 g'8 c, a' c, g' c, |
+      c4 g'8 c, b a g b |
+      c4 g'8 c, a' c, g' a |
+      g e d c b a g b
      \break
-      c4^\markup{C} g'8 c, a' c, g' c, |
-      c4 g'8 c, b^\markup{G} a g b |
-      a^\markup{Am} b c d e f g a |
-      g^\markup{G} e d c b a g b
+      c4 g'8 c, a' c, g' c, |
+      c4 g'8 c, b a g b |
+      a b c d e f g a |
+      g e d c b a g b
      \bar ":|."
     
 }
 
+harmoniesGravelWalk = \chordmode {
+    a2:m a:min  a:min  g a:min  a:min  g g
+    a2:m a:min  a:min  g a:min  a:min  g g
+    a2:m a:min  a:min  g a:min  a:min  g g
+    a2:m a:min  a:min  g a:min  a:min  g g
+    c c c g c c g g 
+    c c c g a:min a:min g g 
+}
+
 \score {
   \header { piece = "The Musical Priest" }
-  \new Staff {
-    <<
-    \chords { 
-    }
-    \musicalpriest 
-    >>
-  }
+  <<
+      \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmoniesMusicalPriest
+      }
+      \musicalpriest 
+  >>
 }
 
 
 \score {
   \header { piece = "The Gravel walk (reel)" }
-  \new Staff {
-    <<
-    \chords { 
+  <<
+      \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmoniesGravelWalk
+      }
+     \gravelswalk 
+  >>
+  \layout {}
+  \midi { 
+    \context {
+      \musicalpriest
+      \gravelswalk
     }
-    \gravelswalk 
-    >>
+    \tempo 2 = 90
   }
 }
