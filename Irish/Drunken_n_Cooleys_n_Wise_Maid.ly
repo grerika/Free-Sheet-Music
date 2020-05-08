@@ -4,7 +4,7 @@
 
 \version "2.18"
 \header {
-  title = "The Drunken Landlady + Cooley's + The Wise Maid"
+  title = "The Drunken Landlady + Cooley's Reel + The Wise Maid"
   enteredby = "grerika @ github"
   tagline = "Last update: 05/08/2020 (Gobliners)"
 }
@@ -12,6 +12,7 @@
 global = {
   \key d \major
   \time 4/4
+ % \tempo 2 = 90
 }
 
 
@@ -56,6 +57,13 @@ cooleys = \relative c' {
   \bar ":|."
 }
 
+harmoniesCooleys = \chordmode {
+  r4 
+  e2:m e:m d d e:m e:m d e:m
+  e2:m e:m d d e:m e:m d e4:m r4
+  e2:m e:m d d e:m e:m d e4:m r4
+  e2:m e:m d d e:m e:m d e4:m r4
+}
 
 wisemaid = \relative c' {
   \global
@@ -65,12 +73,13 @@ wisemaid = \relative c' {
      d8 e | 
       fis4.\mordent g8 fis e d e | fis a a b a fis e d 
      d'4 \tuplet 3/2 { e8 fis g} fis8 d e cis | 
-      d b a fis b e, e4\mordent \break
+      d b a fis b e, e4\mordent 
+    \break
       fis4. \mordent g8 fis e d e | fis a a b a fis e d | 
       d'4 \tuplet 3/2 { e8 fis g } fis8 d e cis | d b a g fis [ d ]
   \bar ":|.|:" 
     \break
-  fis a | 
+    fis a | 
     d4 a8 g fis d fis a | d fis a fis g fis e g |
     fis a, d fis e a, cis e | d fis e d cis a a4\mordent
     b8 d, g b a d, fis a | d fis a fis g fis e d |
@@ -78,10 +87,21 @@ wisemaid = \relative c' {
   \bar ":|."
 }
 
-
+harmoniesWiseMaid = \chordmode {
+  r
+  d2 g a d 
+  d g a d 
+  d g a d 
+  d g a d4 r4
+   %
+  d2 g d a 
+  d a d a 
+  g a d a
+  g4 a d2 g4 a d2  % TODO
+}
 
 \score {
-  \header { piece = "The Drunken Landlady" }
+  %\header { piece = "The Drunken Landlady" }
   <<
      \new ChordNames {
         \set noChordSymbol = "" 
@@ -93,16 +113,30 @@ wisemaid = \relative c' {
 }
 
 \score {
-  \header { piece = "Cooley's" }
+ % \header { piece = "Cooley's Reel" }
   <<
+    \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmoniesCooleys
+      }
     \cooleys 
   >>
+
 }
+
 \score {
-  \header { piece = "The Wise Maid" }
+ % \header { piece = "The Wise Maid" }
   <<
+    \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmoniesWiseMaid
+      }
     \wisemaid 
   >>
+  \layout {}
+  \midi{}
 }
 
 
