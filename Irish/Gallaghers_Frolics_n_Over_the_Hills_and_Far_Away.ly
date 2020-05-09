@@ -3,13 +3,14 @@
 
 \version "2.18.2"
 \header {
-  title = "Gallagher's Frolics"
-  subtitle = "jig"
+  title = "Gallagher's Frolics + Over the Hills and Far Away"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2020 (Gobliners)"
+  tagline = "Last update: 05/09/2020 (Gobliners)"
+  %style = https://www.youtube.com/watch?v=6pld3E3l4uI
 }
 
 voltaAdLib = \markup {  \text \italic {  D.S. al Coda  } }
+
 global = {
   \key e \minor
   \time 6/8
@@ -17,7 +18,36 @@ global = {
  
 }
 
-flute = \relative c'{
+% Source: https://thesession.org/tunes/160 first version
+gallaghers = \relative c' {
+  \key b \minor
+  \time 6/8
+  \dynamicUp
+  \partial 8 d8
+  \repeat volta 2 {
+    e4.\mordent g8 fis e | b'4.\mordent d8 b a | b d b b a b g b g a fis d |
+    e4.\mordent g8 fis e | b' a b d b a b a g fis a fis 
+  }
+  \alternative {
+    { g e e e4 d8 }
+    { g e e e4 e'8 }    
+  }
+  \break
+  \repeat volta 2 {
+    e4 fis8 g fis e | g4 a8 b g e | d cis d fis e d | fis a d, fis e d |
+    e4 fis8 g fis e | d fis e d b a | b a g fis a fis 
+  }
+  \alternative {
+     { g8 e e e4 e'8 }
+     { g,8 e e e4 d8 }
+  }
+  %ˇ\bar "|."
+}
+
+harmoniesGallaghers = \chordmode {
+}
+
+overTheHills = \relative c'{
   \global
       r8 r4 r8 e fis  | 
       \repeat volta 2 {
@@ -33,7 +63,7 @@ flute = \relative c'{
         {d c b a g fis }
         {d' c b a g a}
       }
-      \break
+     \break
       \repeat volta 2 {   
         b r e e4 fis8 | 
         e8 d b a g a | 
@@ -57,7 +87,7 @@ flute = \relative c'{
          { d c b a g fis }
          { d' c b a g a }
       }
-      \break
+      %\break
       \repeat volta 2 {
          b8 r e8 e4 fis8 | e d b a g a | b r e e4 fis8 e d b d4. |
          b8 r e8 e4 fis8 | g fis e fis e d | 
@@ -66,12 +96,12 @@ flute = \relative c'{
         {e d b a g a | b e, e e4 r8 }
         {e' d b d b a | b a g a g fis }
       }       
-      \break
+      %\break
       \bar ".|:"
        e e e g fis e | b' a b d b a | b b b b a b | g a b a fis d |
        e e e g fis e | b' a b d b a | b a g fis16 g a8 fis g e e e4. 
       \bar ":|.|:"
-      \break
+      %\break
       \repeat volta 2 {
        e'4 fis8 g fis e|  g4 a8 b a g | d4 e8 fis e d | a' fis d fis e d |
        e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis
@@ -94,7 +124,7 @@ flute = \relative c'{
 % Em Em | Em G | D D | D Bm
 % Em Em | D D | Em D | Em Em
 
-harmonies =  \chordmode {
+harmoniesOverTheHills =  \chordmode {
     % Theme A - Part A + B
     r2. e:m e:m e:m d e:m e:m g d4. r d4. r
     e2.:m e:m e:m g d d d b:m r
@@ -106,20 +136,43 @@ harmonies =  \chordmode {
     e2.:m e:m e:m g d d d b:m r
 }
 
+
 \score {
+ % \header { piece = "Gallagher's Frolics" }
   <<
       \new ChordNames {
         \set noChordSymbol = "" 
         \set chordChanges = ##t
-        \harmonies
+        \harmoniesGallaghers
       }
-       \flute 
+       \gallaghers 
   >>
   
   \layout { }
   \midi {
     \context {
-      \flute
+      \overTheHills
+    }
+    \tempo 2 = 90
+  }
+}
+
+
+\score {
+  %\header { piece = "Over the Hills and Far Away" }
+  <<
+      \new ChordNames {
+        \set noChordSymbol = "" 
+        \set chordChanges = ##t
+        \harmoniesOverTheHills
+      }
+       \overTheHills 
+  >>
+  
+  \layout { }
+  \midi {
+    \context {
+      \overTheHills
     }
     \tempo 2 = 90
   }
