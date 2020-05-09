@@ -4,8 +4,7 @@
 \version "2.18"
 \header {
   title = "Az Ordastölgy Dala"
-  arranger = "Dallam és szöveg: Csanádi Viktor"
-  composer = "Erdei Rezervátum"
+  composer = "Dallam és szöveg: Csanádi Viktor"
   enteredby = "grerika @ github"
   tagline = "Last update: 05/09/2020 (Gobliners)"
 }

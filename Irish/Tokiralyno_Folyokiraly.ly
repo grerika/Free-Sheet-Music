@@ -5,10 +5,8 @@
 \header {
   title = "Tókirálynő, Folyókirály"
   arranger = "Dallam és szöveg: Csanádi Viktor"
-  composer = "Erdei Rezervátum"
   enteredby = "grerika @ github"
-  %tagline = "Last update: 05/03/2020 (Gobliners)"
-  tagline = "Last update: 05/08/2020"
+  tagline = "Last update: 05/09/2020 (Gobliners)"
 }
 
 global = {
@@ -16,17 +14,6 @@ global = {
   \time 3/4
   \tempo "Adagio" 4 = 58
 }
-
-DCfine = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.C. al fine" }
-}
-
-Fine = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small \italic "fine" }
-}
-
 
 voice = \relative c'' {
   \global
