@@ -14,7 +14,7 @@ voltaAdLib = \markup {  \text \italic {  D.S. al Coda  } }
 global = {
   \key e \minor
   \time 6/8
-  \tempo 4 = 180
+  %\tempo 4 = 180
 }
 
 % Source: https://thesession.org/tunes/160 first version
