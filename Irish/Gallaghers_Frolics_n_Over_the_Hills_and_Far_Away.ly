@@ -1,5 +1,5 @@
 #(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 24)
+#(set-global-staff-size 19)
 
 \version "2.18.2"
 \header {
@@ -14,14 +14,14 @@ voltaAdLib = \markup {  \text \italic {  D.S. al Coda  } }
 global = {
   \key e \minor
   \time 6/8
-    %\tempo 4 = 125
- 
+  \tempo 4 = 180
 }
 
 % Source: https://thesession.org/tunes/160 first version
 gallaghers = \relative c' {
   \key b \minor
   \time 6/8
+  
   \dynamicUp
   \partial 8 d8
   \repeat volta 2 {
@@ -44,14 +44,22 @@ gallaghers = \relative c' {
   %ˇ\bar "|."
 }
 
+
 harmoniesGallaghers = \chordmode {
+    r8
+    % Part A
+    e4.:m e:m | e:m d | e:m e:m | g d 
+    e:m e:m | e:m d | e:m d   | e:m r | e:m e:m
+    % Part B
+    e:m e:m | e:m g | d d | d b:m
+    e:m e:m | d d   | e:m d | e:m r | e:m
 }
 
 overTheHills = \relative c'{
   \global
       r8 r4 r8 e fis  | 
       \repeat volta 2 {
-        g\mark \markup { \musicglyph #"scripts.segno" } e e a e e      | 
+        g\mark \markup \small { \musicglyph #"scripts.segno" } e e a e e      | 
         b' e, e c' b a | 
         b e, e e d e   | 
         fis a g fis e fis | 
@@ -75,7 +83,7 @@ overTheHills = \relative c'{
       \alternative {
            {e d b a g a   | b e, e e4 r8 }
            {e' d b d b a  |  b a g a g fis 
-               \mark \markup { \musicglyph #"scripts.coda" "" } }
+               \mark \markup \small { \musicglyph #"scripts.coda" "" } }
       }
       \break
       \repeat volta 2 {
@@ -112,28 +120,13 @@ overTheHills = \relative c'{
          { g,^\markup { \small \italic "D.S. al Coda"} e e e e fis }
      }
     \bar ":|."
-     \mark \markup { \musicglyph #"scripts.coda" "" } e2.   (e) (e) (e) 
+     \mark \markup \small { \musicglyph #"scripts.coda" "" } e2.   (e) (e) (e) 
      \bar "|."
 }
 
-% Part A
-% Em Em | Em D | Em Em | G D
-% Em Em | Em D | Em D  | Em Em
-
-% Part B
-% Em Em | Em G | D D | D Bm
-% Em Em | D D | Em D | Em Em
 
 harmoniesOverTheHills =  \chordmode {
-    % Theme A - Part A + B
-    r2. e:m e:m e:m d e:m e:m g d4. r d4. r
-    e2.:m e:m e:m g d d d b:m r
-    % repeat Theme A
-    r2. e:m e:m e:m d e:m e:m g d4. r d4. r
-    e2.:m e:m e:m g d d d b:m r
-    % repeat Theme A
-    r2. e:m e:m e:m d e:m e:m g d4. r d4. r
-    e2.:m e:m e:m g d d d b:m r
+  
 }
 
 
@@ -148,13 +141,8 @@ harmoniesOverTheHills =  \chordmode {
        \gallaghers 
   >>
   
-  \layout { }
-  \midi {
-    \context {
-      \overTheHills
-    }
-    \tempo 2 = 90
-  }
+ % \layout { }
+ % \midi { }
 }
 
 
@@ -168,12 +156,7 @@ harmoniesOverTheHills =  \chordmode {
       }
        \overTheHills 
   >>
-  
+
   \layout { }
-  \midi {
-    \context {
-      \overTheHills
-    }
-    \tempo 2 = 90
-  }
+  \midi { }
 }
