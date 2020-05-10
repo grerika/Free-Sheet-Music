@@ -49,8 +49,8 @@ cooleys = \relative c' {
     a fis e cis d b a fis | d e fis d e4
   \bar ":|.|:" 
   \break
-    g'8 e | 
-    e b b4 e8 fis g fis   | e b b4 g'8 e d b |
+    g'8 fis | 
+    e b b4 e8 fis g e   | e b b4 g'8 e d b |
     a4 fis8 a d, a' fis a | a4 fis8 a d e fis g |
     e8 b b4 e8 b g' b, | e b b4 d8 e fis g | 
     a fis e cis d b a fis | d e fis d e4
@@ -122,7 +122,8 @@ harmoniesWiseMaid = \chordmode {
       }
     \cooleys 
   >>
-
+%  \layout {}
+%  \midi { \tempo 4 = 200 }
 }
 
 \score {
