@@ -57,6 +57,7 @@ harmoniesGravelWalk = \chordmode {
     a2:m a:min  a:min  g a:min  a:min  g g
     a2:m a:min  a:min  g a:min  a:min  g g
     a2:m a:min  a:min  g a:min  a:min  g g
+    a2:m a:min  a:min  g a:min  a:min  g g
     c c c g c c g g
     c c c g a:min a:min g g
 }
