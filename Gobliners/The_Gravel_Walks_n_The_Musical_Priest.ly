@@ -3,7 +3,7 @@
 
 \version "2.18"
 \header {
-  title = "The Gravel walks + The Musical Priest"
+  title = "The Gravel Walks + The Musical Priest"
   enteredby = "grerika @ github"
   tagline = "Last update: 05/10/2020 (Gobliners)"
 }
@@ -97,7 +97,7 @@ harmoniesMusicalPriest = \chordmode {
 
 \score {
   \header { 
-      piece = "The Gravel walks" 
+      piece = "The Gravel Walks" 
     } % (reel)
   <<
       \new ChordNames {
