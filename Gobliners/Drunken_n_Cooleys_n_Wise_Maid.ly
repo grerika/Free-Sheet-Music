@@ -6,7 +6,7 @@
 \header {
   title = "The Drunken Landlady + Cooley's Reel + The Wise Maid"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2020 (Gobliners)"
+  tagline = "Last update: 05/10/2020 (Gobliners)"
 }
 
 global = {
