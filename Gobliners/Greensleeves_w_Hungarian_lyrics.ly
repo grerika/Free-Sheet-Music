@@ -6,8 +6,7 @@
   title = "Greensleeves"
   arranger = "Hungarian lyrics: Viktor Csanádi"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/09/2020"
-  %tagline = "Last update: 05/09/2020 (Gobliners)"
+  tagline = "Last update: 05/10/2020"
 }
 
 global = {
@@ -118,7 +117,7 @@ harmonies = \chordmode {
       \line { \bold "2."
         \column {
           "A téli szellőnek lába kél, amint messze pirkad a nyári szél"
-          "Sóvárgó szívem már nem fél,hisz a tavasz a téélben útra kél"
+          "Sóvárgó szívem már nem fél, hisz a tavasz a téélben útra kél"
           "Lelkem a napos víznek áárja, hullámookon ringva száll"
           "Élő fának a száraz ága, hol megpihen az őőszmadár"
         }
