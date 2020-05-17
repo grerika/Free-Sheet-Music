@@ -108,14 +108,6 @@ harmoniesMusicalPriest = \chordmode {
       }
      \gravelswalk
   >>
-  \layout {}
-  \midi {
-    \context {
-      \musicalpriest
-      \gravelswalk
-    }
-    \tempo 2 = 60
-  }
 }
 
 \score {
@@ -128,4 +120,12 @@ harmoniesMusicalPriest = \chordmode {
       }
       \musicalpriest
   >>
+  \layout {}
+  \midi {
+    \context {
+      \musicalpriest
+      \gravelswalk
+    }
+    \tempo 2 = 90
+  }
 }
