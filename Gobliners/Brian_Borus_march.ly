@@ -5,7 +5,7 @@
 \version "2.18"
 \header {
     title = "Brian Boru's March"
-    composer = "Anonimus"
+    composer = "Anonymous"
    % arranger = "Arranged for Flute (Alto Recorder) and Piano by Valerio Carpeggiani"
     enteredby = "grerika @ github"
     tagline = "Last update: 05/17/2020 (Gobliners)"
@@ -19,8 +19,8 @@ global = {
 
 flute = \relative c'' {
   \global
-  \partial 8  e16 d 
-  c8.^\markup{Theme A} b16 a8 a4 e'16 d | c8. b16 a8 a4 d16 c | b8. a16 g8 g4 d'16 c | 
+  \partial 8  e16^\markup{Theme A} d 
+  c8. b16 a8 a4 e'16 d | c8. b16 a8 a4 d16 c | b8. a16 g8 g4 d'16 c | 
   b8. a16 g8 g4 e'16 d | c8. b16 a8 a4 e'16 d |c8. b16 a8 a4. | 
   a8. c16 d8 e4 d8  | c8. b16 a8 a4 r8 
   \bar ":|.|:"
@@ -29,13 +29,17 @@ flute = \relative c'' {
   a8^\markup{Theme B} c d e4 d8  | e4 d8 e4 d8 | g,8 b c d4 b8 | d4 b8 d4 c8 | 
   a8 c d e4 d8 | e4 d8 e4 d8 | c8 b a e'4 d8 | c8 b a a4 r8
   \bar ":|.|:" \break
-  %
-  c'8.^\markup{Theme C} b16 a8 a4 e'8  | c8. b16 a8 a4 d8 | 
-  b8. a16 g8 g4 d'8 | b8. a16 g8 g4 e'8 |
-  %
-  
-  c8. b16 a8 a4 e'8  | c8. b16 a8 a4 a8 | 
-  a8 c d e4.  | d8 c4 a8 a4
+  % Theme C with Viktor's version
+  c8.^\markup{Theme C} b16 a8 a'4 a8  | c,8. b16 a8 a'4 a8 | 
+  b,8. a16 g8 g'4 g8 | b,8. a16 g8 g'4 g8 |  
+  c,8. b16 a8 a'4 a8  | c,8. b16 a8 a'4 a8 | 
+  a,8. c16 d8 e4 d8 | c8. b16 a8 a4 r8
+  % Theme C in the original score
+  %c'8.^\markup{Theme C} b16 a8 a4 e'8  | c8. b16 a8 a4 d8 | 
+  %b8. a16 g8 g4 d'8 | b8. a16 g8 g4 e'8 |
+  %  
+  %c8. b16 a8 a4 e'8  | c8. b16 a8 a4 a8 | 
+  %a8 c d e4.  | d8 c4 a8 a4
   \bar "|."
 }
 
