@@ -28,7 +28,7 @@ flute = \relative c'' {
   %a or g?
   a8^\markup{Theme B} c d e4 d8  | e4 d8 e4 d8 | g,8 b c d4 b8 | d4 b8 d4 c8 | 
   a8 c d e4 d8 | e4 d8 e4 d8 | c8 b a e'4 d8 | c8 b a a4 r8
-  \bar ":|.|:" \break
+  \bar ":|." \break
   % Theme C with Viktor's version
   c8.^\markup{Theme C} b16 a8 a'8\staccato r a8\staccato  | c,8. b16 a8 a'8\staccato r a8\staccato | 
   b,8. a16 g8 g'8\staccato r8 g8\staccato | b,8. a16 g8 g'8\staccato r g8\staccato |  
@@ -55,7 +55,7 @@ upperHarp =  \relative c' {
   % Theme B
   c g g e' d g, | e' d g, e' d g, | c f, f d' c b | d c b d c b | 
   e, a e b' a f | e' a, a e' a, c | c b a e'4 d8 | c b a a4 r8
-  \bar ":|.|:"
+  \bar ":|."
    % Theme C in the original score
   a16 e c a c e a b c d d a | a16 e c a c e a b c d d a |
   g16 d b g b d g a b c c g | g16 d b g b d g a b c c g |
@@ -79,7 +79,7 @@ lowerHarp = \relative c {
   <<g,2. c e g>> | <<b,4 g'>> <<g,8 d'>> <<d4 b'>> <<g,8 b>> |
   <<a2. c e a>> | <<e4 a c e>> <<d,8 f a>>  <<c,4 e a c>> <<a,8 d>>  |
   a'8 g8 f8 e4 f8 | g8 a a a4 r8 
-  \bar ":|.|:"
+  \bar ":|."
    % Theme C in the original score
   <<a8.  a,8>> <<a16 a'16>> <<a,8. e'>>  <<a,16 e'>> <<a,16 a'16>> <<a,16 e'>> <<a8 a,>> |
   <<a'8. a,8>> <<a16 a'16>> <<a,8. e'>>  <<a,16 e'>> <<a,16 a'16>> <<a,16 e'>> <<a8 a,>> |
