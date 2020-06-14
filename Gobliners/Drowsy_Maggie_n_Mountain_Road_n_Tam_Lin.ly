@@ -6,13 +6,13 @@
 \header {
   title = "Drowsy Maggie + Mountain Road + Tam Lin"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/09/2020 (Gobliners)"
+  tagline = "Last update: 06/14/2020 (Gobliners)"
 }
 
 global = {
   \key d \major
   \time 4/4
- % \tempo 2 = 70
+   \tempo 2 = 70 
 }
 
 
@@ -31,18 +31,19 @@ drowsyMaggie = \relative c' {
     { b'8 a b cis d a fis a }
   }
   \break
-    d4 fis8 d b16 cis d8 e cis | d e fis g a fis g e |
-    d4 fis8 d b16 cis d8 e cis | b a b cis d a fis a
+    d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
+    d4 fis8 d  cis4 e8 cis | b a b cis d a fis a
   %
-    d4 fis8 d b16 cis d8 e cis | d e fis g a fis g e |
+    d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
+    % 2nd time this is different
     a8 fis g e fis d e cis     | b a b cis d a fis a
-  \bar "||"
-      d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
-      d8 b fis' b, d b fis' b, | fis' e fis gis a e cis a
+  % Themes C
+     % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
+     % d8 b fis' b, d b fis' b, | fis' e fis gis a e cis a
   %
-      d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
-      d e fis d b16 cis d8 e cis | b a b cis d a fis d
-  \bar "||"
+     % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
+     % d e fis d b16 cis d8 e cis | b a b cis d a fis d
+  \bar "|."
 }
 
 harmoniesDrowsyMaggie = \chordmode {
@@ -63,11 +64,13 @@ harmoniesDrowsyMaggie = \chordmode {
 mountainRoad = \relative c' {
   \global
   \dynamicUp
-    fis4 a8 fis b fis a fis | fis16 a fis8 a fis e fis d e | 
+    %fis4 a8 fis b fis a fis | fis16 a fis8 a fis e fis d e | 
+    fis4 a8 fis b fis a fis | fis4 a8 fis e fis d e | 
     fis4 a8 fis b fis a fis | g4 fis8 g e fis g e
     %
     \break
-    fis4 a8 fis b fis a fis | fis16 a fis8 a fis e fis d e | 
+    %fis4 a8 fis b fis a fis | fis16 a fis8 a fis e fis d e | 
+    fis4 a8 fis b fis a fis | fis4 a8 fis e fis d e | 
     fis a a4\mordent b8 a fis b | a b d e fis g fis e
     %
   \bar "||"
@@ -103,6 +106,15 @@ tamLin = \relative c' {
       { d cis b a fis b b a }
       { d cis b a fis b b4 }
     }
+    %same as the previous repeat volta
+  \repeat volta 2 {
+       fis4 b8 fis d' fis, b fis | g4 b8 g d' g, b g   |
+       a4 cis8 a e' a, cis a     | 
+    }
+    \alternative  {
+      { d cis b a fis b b a }
+      { d cis b a fis b b4 }
+    }
    \bar ".|:"
     \break
       b'8 fis fis4\mordent  d8 fis b, fis' | b8 fis fis4\mordent d8 fis b, fis'
@@ -119,17 +131,17 @@ harmoniesTamLin = \chordmode {
   % D D A A 
   % D D G AD
     d2 d g g a a d a4 r a4 r d2
-    d r d r a r a r
-    d r d r g g a d
+    %same as the previous line
+    d2 d g g a a d a4 r a4 r d2
+    d2 r d r a r a r
+    d2 r d r g g a d
 }
 
 
 
 
-
-
 \score {
-  \header { piece = "Drowsy Maggie" }
+  \header { piece = "Drowsy Maggie (2x)" }
   <<
      \new ChordNames {
         \set noChordSymbol = "" 
@@ -138,13 +150,11 @@ harmoniesTamLin = \chordmode {
       }
       \drowsyMaggie      
   >>
-  %\layout {}
-  %\midi {}
 }
 
 
 \score {
-  \header { piece = "Mountain Road" }
+  \header { piece = "Mountain Road (2x)" }
   <<
     \new ChordNames {
         \set noChordSymbol = "" 
@@ -153,12 +163,11 @@ harmoniesTamLin = \chordmode {
       }
     \mountainRoad 
   >>
-%  \layout {}
-%  \midi {}
+  
 }
 
 \score {
-  \header { piece = "Tam Lin" }
+  \header { piece = "Tam Lin (2x)" }
   <<
     \new ChordNames {
         \set noChordSymbol = "" 
@@ -167,6 +176,7 @@ harmoniesTamLin = \chordmode {
       }
     \tamLin
   >>
+  
   \layout {}
-  \midi{}
+  \midi {}
 }
