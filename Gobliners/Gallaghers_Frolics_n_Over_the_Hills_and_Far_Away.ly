@@ -26,15 +26,17 @@ gallaghers = \relative c' {
   %\partial 8 d8
   \repeat volta 2 {
     e4.\mordent g8 fis e | b'4.\mordent d8 b a | b d b b a b g b g a fis d |
+    \break
     e4.\mordent g8 fis e | b' a b d b a b a g fis a fis
   }
   \alternative {
     { g e e e4 d8 }
-    { g e e e4 e'8 }
+    { g e e e4. }
   }
   \break
   \repeat volta 2 {
-    e4 fis8 g fis e | g4 a8 b g e | d cis d fis e d | fis a d, fis e d |
+    e'4 fis8 g fis e | g4 a8 b g e | d cis d fis e d | fis a d, fis e d |
+    \break
     e4 fis8 g fis e | d fis e d b a | b a g fis a fis
   }
   \alternative {
@@ -82,7 +84,7 @@ overTheHills = \relative c'{
       }
       \alternative {
            {e d b a g a   | b e, e e4 r8 }
-           {e' d b d b a  |  b a g a g fis }
+           {e' d b d b a  | b a g a g fis }
       }
       \break
       \repeat volta 2 {
