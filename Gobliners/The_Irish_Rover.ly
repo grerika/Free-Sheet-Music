@@ -8,7 +8,7 @@
   composer = "Traditional Irish"
   arranger = "Hungarian lyrics: Csanádi Viktor"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2020 (Gobliners)"  
+  tagline = "Last update: 08/28/2020 (Gobliners)"  
 }
 
 global = {
@@ -122,7 +122,7 @@ harmonies = \chordmode {
           "Minden lánynak borzongott a bőre"
           "A beszéde ékes, és a tánca sem oly rémes"
           "Bárkit meghódított, ki a fedélközbe nyitott"
-          "Így hajóztunk páran, mulatva, vidáman"
+          "Így hajóztunk páran, nevetve, vidáman"
           "És az Irish Rover repített el minket"
         }
       }
@@ -134,7 +134,7 @@ harmonies = \chordmode {
             "Szép lassan elfogytunk, s csak ketten maradtunk"
             "A kapitány úr kutyája meg én"
             "Hajónk sziklának ment, ott hol senki meg nem ment"
-            "A kutya is kiesett a víízbe"
+            "A kutya is beesett a víízbe"
             "De sok lóherét evett, így szerencsésen esett,"
             "     megúszta és békésen a partra evezett"
         }
