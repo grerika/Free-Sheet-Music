@@ -6,7 +6,7 @@
 \header {
   title = "Drowsy Maggie + Mountain Road + Tam Lin"
   enteredby = "grerika @ github"
-  tagline = "Last update: 06/14/2020 (Gobliners)"
+  tagline = "Last update: 08/28/2020 (Gobliners)"
 }
 
 global = {
@@ -32,11 +32,13 @@ drowsyMaggie = \relative c' {
   }
   \break
     d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
-    d4 fis8 d  cis4 e8 cis | b a b cis d a fis a
+    d4 fis8 d  cis4 e8 cis | b a b cis d a fis a\break
   %
-    d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
-    % 2nd time this is different
-    a8 fis g e fis d e cis     | b a b cis d a fis a
+    d4^\markup{Elsőre}  fis8 d  cis4 e8 cis | d e fis g a fis g e
+    a8fis g e fis d e cis     | b a b cis d a fis a\break
+    %\bar "||"
+    d4^\markup{Másodjára}  fis8 d  cis4 e8 cis | d8 e fis8 d8 fis a8 a4  |
+    b8 a8 a fis g fis e  d8 | b4 r4
   % Themes C
      % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
      % d8 b fis' b, d b fis' b, | fis' e fis gis a e cis a
