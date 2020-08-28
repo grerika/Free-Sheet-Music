@@ -6,7 +6,7 @@
   title = "Earl's Chair + Frank's Reel"
   %arranger = "Hornpipe, Ireland, traditional"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/09/2020 (Gobliners)"
+  tagline = "Last update: 08/28/2020 (Gobliners)"
 }
 
 global = {
@@ -42,15 +42,13 @@ earlsChair  = \relative c'' {
 }
 
 harmoniesEarlsChair = \chordmode {
-    b1:m r
-    d1 r
-    b2:m b:m r r 
-    d d e:m d
+    b4:m r b4:m r |  b4:m r b4:m r
+    d4 r d r | d4 r d r
+    b4:m r b4:m r |  b4:m r b4:m r
+    d4 r g r | a4 r d r
     % 
-    e:m b:m | e:m b:m
-    e:m d   | b:m d 
-    e:m b:m | e:m d
-    b:m d   | b:m d
+    a r d r | a r b:min r | a r d r | d r a r 
+    a r d r | g r g r | d r d r | d r a r
 }
 
 franksReel = \relative c'{
@@ -92,8 +90,10 @@ franksReel = \relative c'{
 
 
 harmoniesFranksReel = \chordmode {
-    a2 d a1 d2 a b:m e a d2 a1 d2 a e a e a
-    a e a a d a d e a e a a d a e a e a
+    a2 d | a4 r a4 r | d2 a | d e | 
+    a d2 | a4 r a4 r | d2 a | e a | e a
+    a e  | a4 r a4 r | d2 a | d e |
+    a e  | a4 r a4 r | d2 a | e a | e a
 }
 
 \score { 
