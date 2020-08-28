@@ -4,7 +4,7 @@
 \header {
   title = "The Swallowtail + Morrison's jig"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/07/2020 (Gobliners)"
+  tagline = "Last update: 08/28/2020 (Gobliners)"
 }
 
 global = {
@@ -42,23 +42,24 @@ morrisons = \relative c' {
   \break
   e4 b'8 e,4 b'8 |  e,4 b'8  a8 fis d | 
   g4 g8 fis g a | b a g fis e d |
-  \bar ":|.|:"
+  \bar ":|."
   \break
   b' e e fis e e | a e e fis e d | 
   b e e fis e e |   a4 g fis | 
   b,8 e e fis e e| a e e fis e fis | 
   g fis e d4 a8 | b8 a g fis e d 
-  \bar ":|.|:"
+  \bar "||"
   \break
   b' e e fis e e | a e e fis e e | 
   b e e fis e fis | g a g d e fis | 
+ % \break
   g4 g8 g fis e | d e fis g4 d8 | 
   e d cis d4 a8 | b a g fis e d 
   \bar "||"
     e2.^\markup{\italic end} 
-  \bar "|." 
+  \bar "|."% \break
      e8^\markup{transition} [e e] fis [fis fis ] g [g g]  a8^\markup{\italic rit.} b8 d8 
-  \bar "|."
+  %\bar "|."
 }
 
 
