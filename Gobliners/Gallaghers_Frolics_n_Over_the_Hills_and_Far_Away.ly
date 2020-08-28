@@ -5,7 +5,7 @@
 \header {
   title = "Gallagher's Frolics + Over the Hills and Far Away"
   enteredby = "grerika @ github"
-  tagline = "Last update: 06/15/2020 (Gobliners)"
+  tagline = "Last update: 06/17/2020 (Gobliners)"
   %style = https://www.youtube.com/watch?v=6pld3E3l4uI
 }
 
@@ -79,6 +79,7 @@ overTheHills = \relative c'{
         e8 d b a g a |
         b r e e4 fis8 |
         e d b d4. |
+        \break
         b8 r e e4 fis8 |
         g fis e fis e d|
       }
@@ -89,7 +90,8 @@ overTheHills = \relative c'{
       \break
       \repeat volta 2 {
         g e e a e e | b' e, e c' b a | b e, e e d e |
-        fis a g fis e fis |% \break
+        fis a g fis e fis |
+        \break
         g e e a e e | b' e, e c' a b | c a g a b c |
       }
       \alternative {
@@ -99,6 +101,7 @@ overTheHills = \relative c'{
       \break
       \repeat volta 2 {
          b8 r e8 e4 fis8 | e d b a g a | b r e e4 fis8 e d b d4. |
+         \break
          b8 r e8 e4 fis8 | g fis e fis e d |
       }
       \alternative {
@@ -120,6 +123,7 @@ overTheHills = \relative c'{
       \break
       \repeat volta 2 {
        e'4 fis8 g fis e|  g4 a8 b a g | d4 e8 fis e d | a' fis d fis e d |
+       %\break
        e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis
       }
       \alternative {
