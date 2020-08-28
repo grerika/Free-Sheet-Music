@@ -53,13 +53,13 @@ gravelswalk = \relative c'' {
 }
 
 harmoniesGravelWalk = \chordmode {
-    a2:m a:min  a:min  g a:min  a:min  g g
-    a2:m a:min  a:min  g a:min  a:min  g g
-    a2:m a:min  a:min  g a:min  a:min  g g
-    a2:m a:min  a:min  g a:min  a:min  g g
-    a2:m a:min  a:min  g a:min  a:min  g g
-    c c c g c c g g
-    c c c g a:min a:min g g
+    a4:m r a:min r a:min r g r a:min r a:min r c r g r
+    a4:m r a:min r a:min r g r a:min r a:min r c r g r
+    a4:m r a:min r a:min r g r a:min r a:min r c r g r
+    a4:m r a:min r a:min r g r a:min r a:min r c r g r
+    a4:m r a:min r a:min r g r a:min r a:min r c r g r
+    c4 r c r c r g r c r c r g r g r
+    c4 r c r c r g r a:min r a:min r g r g r
 }
 
 musicalpriest = \relative c''{
@@ -92,6 +92,9 @@ musicalpriest = \relative c''{
 }
 
 harmoniesMusicalPriest = \chordmode {
+    r4 e4:min r e:min r | d r d r | e:min r e:min r | d r e:min r |
+    g r g r | d r d r | e:min r e:min r | d r e:min r | d r e:m r 
+    g r g r | d r d r | e:min r e:min r | d r e:min r |
 }
 
 
@@ -116,7 +119,7 @@ harmoniesMusicalPriest = \chordmode {
       \new ChordNames {
         \set noChordSymbol = ""
         \set chordChanges = ##t
-        \harmoniesMusicalPriest
+      %  \harmoniesMusicalPriest
       }
       \musicalpriest
   >>

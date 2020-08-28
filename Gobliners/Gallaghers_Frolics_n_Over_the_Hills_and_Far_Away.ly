@@ -49,11 +49,11 @@ gallaghers = \relative c' {
 
 harmoniesGallaghers = \chordmode {
     % Part A
-    e4.:m e:m | e:m d | e:m e:m | g d
-    e:m e:m | e:m d | e:m d   | e:m r | e:m e:m
+    e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8
+    e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 d4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8
     % Part B
-    e:m e:m | e:m g | d d | d b:m
-    e:m e:m | d d   | e:m d | e:m r | e:m
+    e4:m r8 e4:m r8| e4:m r8 g4  r8 | d4 r8 d4 r8 | d4 r8 b4:m r8
+    e4:m r8 e4:m r8| d4 r8 d4  r8 | e4:m r8 d4 r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8
 }
 
 overTheHills = \relative c'{
@@ -123,22 +123,30 @@ overTheHills = \relative c'{
       \break
       \repeat volta 2 {
        e'4 fis8 g fis e|  g4 a8 b a g | d4 e8 fis e d | a' fis d fis e d |
-       %\break
        e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis
       }
       \alternative {
-        %\set Score.repeatCommands = #(list (list 'volta voltaAdLib) )
          { e' b e d g fis }
          { g,^\markup { \small \italic "D.S. al Coda"} e e e e fis }
      }
     \bar ":|."
-     \mark \markup \small { \musicglyph #"scripts.coda" "" } e2.   (e) (e) (e)
+     \mark \markup \small { \musicglyph #"scripts.coda" "" } 
+     e2.   (e) (e) (e)
      \bar "|."
 }
 
 
 harmoniesOverTheHills =  \chordmode {
-
+    r4 
+    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4 r8 d4 r8 | 
+    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4   r8 d4 r8   | d4 r8 d4 r8 |  d4 r8 d4 r8 | 
+    c4 r8 c4 r8 | d4 r8 d4 r8 | c4 r8 c4 r8 | d4 r8 d4 r8 |
+    c4 r8 c4 r8 | d4 r8 d4 r8 | d4 r8 d4 r8 | e4:min r8 e4:min r8 | d4 r8 d4 r8  |  e4:min r8 e4:min r8
+    % repetition
+    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4 r8 d4 r8 | 
+    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4   r8 d4 r8   | d4 r8 d4 r8 |  d4 r8 d4 r8 | 
+    c4 r8 c4 r8 | d4 r8 d4 r8 | c4 r8 c4 r8 | d4 r8 d4 r8 |
+    c4 r8 c4 r8 | d4 r8 d4 r8 | d4 r8 d4 r8 | e4:min r8 e4:min r8 | d4 r8 d4 r8 |  e4:min r8 e4:min r8
 }
 
 

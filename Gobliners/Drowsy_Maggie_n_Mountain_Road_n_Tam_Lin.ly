@@ -34,11 +34,11 @@ drowsyMaggie = \relative c' {
     d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
     d4 fis8 d  cis4 e8 cis | b a b cis d a fis a\break
   %
-    d4^\markup{Elsőre}  fis8 d  cis4 e8 cis | d e fis g a fis g e
+    d4_\markup{Elsőre}  fis8 d  cis4 e8 cis | d e fis g a fis g e
     a8fis g e fis d e cis     | b a b cis d a fis a\break
     %\bar "||"
-    d4^\markup{Másodjára}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
-    b8 a4 fis8 g fis e  d8 | b4 r4
+    d4_\markup{Másodjára}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
+    b8 a4 fis8 g fis e  d8 | b4 r4 r4 r4
   % Themes C
      % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
      % d8 b fis' b, d b fis' b, | fis' e fis gis a e cis a
@@ -51,16 +51,18 @@ drowsyMaggie = \relative c' {
 harmoniesDrowsyMaggie = \chordmode {
   e4:m r e:m r e:m  r d r	
   e:m r e:m r 
-    d r d r
-    d r d r
+    e:min r d r
+    e:min r d r
   % repeat
 %  e:m e:m e:m d	
 %  e:m e:m d d
   %
   d r a r d r d r
-  d r a r g r g r
+  d r a r g r d r
   d r a r d r d r
-  d r a r e:m  r e:m r  
+  d r a r g r d r
+  e:min r e:min r | e:min r d r | 
+  e:min r e:min r | e:min r d r | 
 }
 
 mountainRoad = \relative c' {
@@ -91,10 +93,10 @@ harmoniesMountainRoad = \chordmode {
   % D DA DG AD
   % D  DA D GA
   % D  DA D GA
-    d2 r d a d d g a
-    d2 r d a d g a d
-    d2 r d a d d g a
-    d2 r d a d d g a
+    d4 r d r | d r a r | d r d r | g r a r
+    d4 r d r | d r a r | d r g r | a r d r
+    d4 r d r | d r a r | d r d r | g r a r
+    d4 r d r | d r a r | d r d r | g r a r
 }
 
 tamLin = \relative c' {
@@ -132,11 +134,10 @@ harmoniesTamLin = \chordmode {
   % D G A AD
   % D D A A 
   % D D G AD
-    d2 d g g a a d a4 r a4 r d2
-    %same as the previous line
-    d2 d g g a a d a4 r a4 r d2
-    d2 r d r a r a r
-    d2 r d r g g a d
+    d4 r d r | g r g r | a r a r | d r a4 r |  a4 r d4 r |
+    d4 r d r | g r g r | a r a r | d r a4 r |  a4 r d4 r |
+    d4 r d r | d r d r | a r a r | a r a4 r |
+    d4 r d r | d r d r | g r g r | a r d4 r 
 }
 
 
