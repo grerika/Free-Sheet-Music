@@ -5,7 +5,7 @@
 \header {
   title = "The Gravel Walks + The Musical Priest"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/10/2020 (Gobliners)"
+  tagline = "Last update: 08/28/2020 (Gobliners)"
 }
 
 gravelswalk = \relative c'' {
@@ -66,8 +66,8 @@ musicalpriest = \relative c''{
    \key d \major
     \time 4/4
     \bar ".|:"
-    \partial 4 b8 a
-      fis b b4\mordent b8 a b d | cis b a fis' e cis b a |
+    %\partial 4 b8 a
+      fis,8 b b4\mordent b8 a b d | cis b a fis' e cis b a |
       fis b b4\mordent b8 a b d | cis b a fis b4
     \bar ":|.|:"
     \break
