@@ -37,8 +37,8 @@ drowsyMaggie = \relative c' {
     d4^\markup{Elsőre}  fis8 d  cis4 e8 cis | d e fis g a fis g e
     a8fis g e fis d e cis     | b a b cis d a fis a\break
     %\bar "||"
-    d4^\markup{Másodjára}  fis8 d  cis4 e8 cis | d8 e fis8 d8 fis a8 a4  |
-    b8 a8 a fis g fis e  d8 | b4 r4
+    d4^\markup{Másodjára}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
+    b8 a4 fis8 g fis e  d8 | b4 r4
   % Themes C
      % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
      % d8 b fis' b, d b fis' b, | fis' e fis gis a e cis a
@@ -152,6 +152,8 @@ harmoniesTamLin = \chordmode {
       }
       \drowsyMaggie      
   >>
+  \layout {}
+  \midi {}
 }
 
 
@@ -179,6 +181,5 @@ harmoniesTamLin = \chordmode {
     \tamLin
   >>
   
-  \layout {}
-  \midi {}
+
 }
