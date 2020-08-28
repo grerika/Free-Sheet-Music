@@ -28,7 +28,7 @@ earlsChair  = \relative c'' {
     b4 b8 d b a fis a | 
     a fis a b d cis d fis | 
     e d e fis d4. r8
-    \bar ":|."
+    \bar ":|.|:"
     e4 e8 fis d4 d8 fis | 
     e d e fis d b a4 |
     e'4 e8 fis d cis d e | 
