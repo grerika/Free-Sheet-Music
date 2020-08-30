@@ -6,7 +6,7 @@
 \header {
   title = "Drowsy Maggie + Mountain Road + Tam Lin"
   enteredby = "grerika @ github"
-  tagline = "Last update: 08/28/2020 (Gobliners)"
+  tagline = "Last update: 08/30/2020 (Gobliners)"
 }
 
 global = {
@@ -34,11 +34,11 @@ drowsyMaggie = \relative c' {
     d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
     d4 fis8 d  cis4 e8 cis | b a b cis d a fis a\break
   %
-    d4_\markup{Elsőre}  fis8 d  cis4 e8 cis | d e fis g a fis g e
+    d4_\markup{First time}  fis8 d  cis4 e8 cis | d e fis g a fis g e
     a8fis g e fis d e cis     | b a b cis d a fis a\break
     %\bar "||"
-    d4_\markup{Másodjára}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
-    b8 a4 fis8 g fis e  d8 | b4 r4 r4 r4
+    d4_\markup{Second time}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
+    b8 a8 (a8) fis8 g fis e  d8 | b4 r4 r4 r4
   % Themes C
      % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
      % d8 b fis' b, d b fis' b, | fis' e fis gis a e cis a
@@ -126,6 +126,13 @@ tamLin = \relative c' {
     \break
       b8 fis fis4\mordent  d8 fis b, fis' | b8 fis fis4\mordent d8 fis b, fis |
       g4.\mordent fis8 g a b cis 	 | d b cis a fis b b4       
+ % \bar ".|:"
+    %\break %variation
+      %fis'4_\markup{Second time} b8 ais b ais b fis cis fis | b8 fis fis4 d8 fis b, fis'
+     % a8 e e4 cis8 e e4    | a8 e e4 a8 b cis a
+    %\break
+    %  b8 fis fis4  d8 fis b, fis' | b8 fis fis4 d8 fis b, fis |
+    %  g4. fis8 g a b cis 	 | d cis b a b2       
   \bar ":|."
 }
 

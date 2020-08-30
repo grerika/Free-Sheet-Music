@@ -123,11 +123,12 @@ overTheHills = \relative c'{
       \break
       \repeat volta 2 {
        e'4 fis8 g fis e|  g4 a8 b a g | d4 e8 fis e d | a' fis d fis e d |
+       %\break
        e4 fis8 g fis e | d fis e d b a | b a g fis16 g a8 fis
       }
       \alternative {
          { e' b e d g fis }
-         { g,^\markup { \small \italic "D.S. al Coda"} e e e e fis }
+         { g,_\markup { \small \italic "D.S. al Coda"} e e e e fis }
      }
     \bar ":|."
      \mark \markup \small { \musicglyph #"scripts.coda" "" } 
@@ -147,6 +148,14 @@ harmoniesOverTheHills =  \chordmode {
     e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4   r8 d4 r8   | d4 r8 d4 r8 |  d4 r8 d4 r8 | 
     c4 r8 c4 r8 | d4 r8 d4 r8 | c4 r8 c4 r8 | d4 r8 d4 r8 |
     c4 r8 c4 r8 | d4 r8 d4 r8 | d4 r8 d4 r8 | e4:min r8 e4:min r8 | d4 r8 d4 r8 |  e4:min r8 e4:min r8
+    % Gallagher's 
+    e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8
+    %% Part A
+    %e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8
+    %e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 d4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8
+    %% Part B
+    e4:m r8 e4:m r8| e4:m r8 g4  r8 | d4 r8 d4 r8 | d4 r8 b4:m r8
+    e4:m r8 e4:m r8| d4 r8 d4  r8 | e4:m r8 d4 r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8
 }
 
 
