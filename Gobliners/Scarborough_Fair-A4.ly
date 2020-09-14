@@ -1,30 +1,41 @@
 #(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 28)
+%#(set-global-staff-size 28)
 
 \version "2.18"
 \header {
   title = "Scarborough Fair"
-  arranger = "Hungarian lyrics: Viktor Csanádi"
+  composer = "England"
+  arranger = "Magyar szöveg: Csanádi Viktor"
   enteredby = "grerika @ github"
-  tagline = "Last update: 05/09/2020"% (Gobliners)"
+  tagline = "Utoljára frissítve: 09/14/2020"% (Gobliners)"
 }
 
 global = {
   \key c \major
   \time 3/4
+  \tempo "Leisurely, with a lilt"
 %  \tempo 4 = 125
 }
 
 tune = \relative c' {
   \global
-      d2 d4 | a'2 a4 | e f e d2. (d4) \breathe \break a' c |
-      d2 c4 | a b g | a2. (a2) \breathe \break d4 |
-      d2 d4 c2 a4 | a4 g f | e c2 (c2.) \breathe \break |
-      d2 a'4 g2 f4 | e d c | d2. (d)
+      d2-3 d4-3 | a'2-1 a4-1 | e-2 f-1 e-2 d2.-3 (d4) \breathe \break 
+      a'-3 c-2 |  d2-1 c4-2 | a-3 b-1 g-2 | a2.-1 (a2) \breathe \break d4-1 |
+      d2-1 d4-1 c2-2 a4-1 | a4-1 g-2 f-3 | e-4 c2 (c2.) \breathe \break |
+        d2-3 a'4-1 g2-2 f4-1 | e-2 d-3 c-4 | d2-3 a'4-2 (d2.-1)
     \bar "|."
-    
 }
 
+
+harp = \relative c {
+  \global\clef F
+      d4-3 a'2-1 | d,4-3 a'2-1 | c,4-3 g'2-1 | d4-3 a'2-1 \break
+      f2-2 e4-4 | d4-4 a'2-1 | f2-2 e4-3 | d4-4 e-3 f-2 | \break
+      g-1 f-2 e-3 | d4-4 a'2-1 | f2.-2 | f4-1 e-2 d-3
+      c-4 c'2-1 | g2.-2 | d4-3 a'2-1 | c,4-3 g'2-1 | g4-1 f-2 e-3 |
+      d-4 a'2-1 (a2.)
+      \bar "|."    
+}
 
 harmonies = \chordmode {
 }
@@ -38,7 +49,12 @@ verseHungarian = \lyricmode {
       \set chordChanges = ##t
       \harmonies
     }
-    \tune 
+    
+    \new GrandStaff <<
+       \tune
+      \new Staff \harp
+    >> 
+
     \addlyrics \verseHungarian
     >>
 }
