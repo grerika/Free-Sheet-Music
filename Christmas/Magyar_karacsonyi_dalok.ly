@@ -1,19 +1,64 @@
 #(set-default-paper-size "a4" 'portrait)
-%#(set-default-paper-size "a5" 'landscape)
-#(set-global-staff-size 21)
+%#(set-global-staff-size 22)
 
-\version "2.18"
 \header {
   title = "Karácsonyi dalok"
   tagline = "Utoljára frissítve: 2020. december 19."
 }
-\paper {
-  system-system-spacing.basic-distance = #6
-  score-system-spacing =
-    #'((basic-distance . 16)
-       (minimum-distance . 16)
-       (padding . 4)
-       (stretchability . 20))
+
+CsendesEj = \relative c'' {
+  \key d \major
+  \time 3/4
+   d4. a8 fis4 | a4. g8 e4  | fis2.\fermata | \break
+  a4. (b8) a4 fis2. | a4. b8 a4 fis2. |
+  e'4. (dis8) e4 cis2. | d4. (cis8) d4 a2. \break
+  b2 b4 d4. cis8 b4 | a4. b8 a4 | fis2. | \break
+  b2 b4 | d4. cis8 b4 | a4. b8 a4 | fis2. | \break
+  cis'2 cis4 | e4. d8 cis4 | d2. (fis2.) |
+  d4. (a8) fis4 | a4. g8 e4 | d2. (d2) r4
+  \bar "|."
+}
+
+CsendesEjVersszakElso = \lyricmode {
+  _ _ _ _ _ _ _
+  Csen -- des éj! Szent -- sé -- ges éj!
+  Mi -- nde -- nek ál -- ma mély;
+  Nincs más fent, csak a Szent szü -- le -- pár,
+  Drá -- ga kis -- de -- dük ál -- ma -- i -- nál,
+  Szent Fi -- ú, a -- lud -- jál
+  szent Fi -- ú, a -- lud -- jál!
+}
+
+CsendesEjVersszakMasodik = \lyricmode {
+  _ _ _ _ _ _ _
+  Csen -- des éj! Szent -- sé -- ges éj!
+  An -- gya -- lok hang -- ja kél;
+  Halld a meny -- nye -- i hal -- le -- lu -- ját,
+  Szer -- te zen -- gi a drá -- ga sza -- vát,
+  Krisz -- tus meg -- sza -- ba -- dít,
+  Krisz -- tus meg -- sza -- ba -- dít!
+}
+
+CsendesEjVersszakHarmadik = \lyricmode {
+  _ _ _ _ _ _ _
+  Csen -- des éj! Szent -- sé -- ges éj!
+  Szív ö -- rülj, higgy, re -- mélj!
+  Is -- ten Szent Fi -- a hin -- ti re -- ád,
+  Aj -- ka vi -- gaszt a -- dó mo -- so -- lyát,
+  Krisz -- tus meg -- szü -- le -- tett,
+  Krisz -- tus meg -- szü -- le -- tett!
+}
+
+\score {
+  \header { piece = "Csendes éj" }
+  <<
+      \CsendesEj
+      \addlyrics { \set stanza = #" " \CsendesEjVersszakElso}
+      \addlyrics { \set stanza = #" " \CsendesEjVersszakMasodik}
+      \addlyrics { \set stanza = #" " \CsendesEjVersszakHarmadik}
+  >>
+  \layout {}
+  \midi {}
 }
 
 Dicsoseg = \relative c' {
@@ -50,6 +95,7 @@ Dicsoseg = \relative c' {
   \midi {}
 }
 
+\pageBreak
 
 
 
@@ -181,8 +227,6 @@ KisKaracsonyNagyKaracsony = \relative c'' {
   \layout {}
   \midi {}
 }
-
-\pageBreak
 
 MennybolAzAngyal = \relative c' {
     \key f \major
