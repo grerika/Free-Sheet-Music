@@ -3,7 +3,7 @@
 
 \header {
   title = "Karácsonyi dalok"
-  tagline = "Utoljára frissítve: 2020. december 19."
+  tagline = "Utoljára frissítve: 2020. december 21."
 }
 
 CsendesEj = \relative c'' {
@@ -295,7 +295,7 @@ PasztorokPasztorokVersszakElso = \lyricmode {
 
 PasztorokPasztorokVersszakMasodik = \lyricmode {
   An -- gya -- lok szó -- za -- ta min -- ket is hív. 
-  Ért -- se mg ezt te -- hát min -- de hű szív;
+  Ért -- se meg ezt te -- hát min -- de hű szív;
   A kis -- ded Jé -- zus -- kát mi is áld -- juk, 
   Mint a hív pász -- to -- rok, ma -- gasz -- tal -- juk.
 }
