@@ -1,12 +1,10 @@
-#(set-default-paper-size "a4" 'portrait)
+\include "default-settings.ly"
 %#(set-global-staff-size 24 )
 
-\version "2.18"
 \header {
   title = "Sailor's Hornpipe"
-  enteredby = "grerika @ github"
-  %tagline = "Last update: 05/03/2020 (Gobliners)"
-  tagline = "Last update: 05/09/2020 (Gobliners)"
+  subtitle = "Popeye"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {

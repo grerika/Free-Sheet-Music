@@ -1,12 +1,10 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 24)
+\include "default-settings.ly"
 
 \version "2.18"
 \header {
   title = "Baj van a részeg tengerésszel"
   arranger = "Angol népdal"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 05/07/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -17,20 +15,20 @@ global = {
 
 flute = \relative c'' {
   \global
-      b4 b8 b b4 b4  | b4 e, g b | 
-      a4 a8 a a4 a4  | a4 d, fis a | 
+      b4 b8 b b4 b4  | b4 e, g b |
+      a4 a8 a a4 a4  | a4 d, fis a |
       \break
-      b4 b8 b8 b4 b4 | b4 cis d e | 
-      d b a fis | e2 e2 
+      b4 b8 b8 b4 b4 | b4 cis d e |
+      d b a fis | e2 e2
       \break
-      b'2  b4 b4  | b4 e, g b | 
+      b'2  b4 b4  | b4 e, g b |
       a2  a4 a4  | a4 d, fis a |
       \break
-      b2  b4 b4 | b4 cis d e | 
-      d b a fis | e2 e2 
-  
+      b2  b4 b4 | b4 cis d e |
+      d b a fis | e2 e2
+
     \bar "|."
-    
+
 }
 
 
@@ -52,7 +50,7 @@ verseHungarian = \lyricmode {
 }
 
 \score {
-    <<      
+    <<
     \new ChordNames {
       \set chordChanges = ##t
       \harmonies
@@ -60,7 +58,7 @@ verseHungarian = \lyricmode {
     \new Voice { \flute }
     \addlyrics \verseHungarian
     >>
-  
+
   \layout { }
   \midi { }
 }
@@ -85,25 +83,25 @@ verseHungarian = \lyricmode {
       }
      %\combine \null \vspace #0.1 % adds vertical spacing between verses
        \line { \bold "3."
-        \column {       
+        \column {
             "Dob' bele, itt van a mentőcsónak (3x)"
         }
       }
       %\combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "4."
-        \column {               
+        \column {
             "Lógjon a lába az orrkötélen (3x)"
         }
       }
       %\combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "5."
-          \column { 
+          \column {
            "Kösd hamar oda csak a nagykorlátra (3x)"
           }
       }
      % \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "6."
-          \column { 
+          \column {
            "Bele vele gyorsan a tengervízbe (3x)"
           }
       }

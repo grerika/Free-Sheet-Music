@@ -1,11 +1,8 @@
-#(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 18)
+\include "default-settings.ly"
 
-\version "2.18.2"
 \header {
   title = "Gallagher's Frolics + Over the Hills and Far Away"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 06/17/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
   %style = https://www.youtube.com/watch?v=6pld3E3l4uI
 }
 
@@ -73,31 +70,6 @@ overTheHills = \relative c'{
         {d c b a g fis }
         {d' c b a g a}
       }
-     \break
-      \repeat volta 2 {
-        b r e e4 fis8 |
-        e8 d b a g a |
-        b r e e4 fis8 |
-        e d b d4. |
-        \break
-        b8 r e e4 fis8 |
-        g fis e fis e d|
-      }
-      \alternative {
-           {e d b a g a   | b e, e e4 r8 }
-           {e' d b d b a  | b a g a g fis }
-      }
-      \break
-      \repeat volta 2 {
-        g e e a e e | b' e, e c' b a | b e, e e d e |
-        fis a g fis e fis |
-        \break
-        g e e a e e | b' e, e c' a b | c a g a b c |
-      }
-      \alternative {
-         { d c b a g fis }
-         { d' c b a g a }
-      }
       \break
       \repeat volta 2 {
          b8 r e8 e4 fis8 | e d b a g a | b r e e4 fis8 e d b d4. |
@@ -130,25 +102,20 @@ overTheHills = \relative c'{
          { e' b e d g fis }
          { g,_\markup { \small \italic "D.S. al Coda"} e e e e fis }
      }
-    \bar ":|."
-     \mark \markup \small { \musicglyph #"scripts.coda" "" } 
+    \bar ":|." %\break
+     \mark \markup \small { \musicglyph #"scripts.coda" "" }
      e2.   (e) (e) (e)
      \bar "|."
 }
 
 
 harmoniesOverTheHills =  \chordmode {
-    r4 
-    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4 r8 d4 r8 | 
-    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4   r8 d4 r8   | d4 r8 d4 r8 |  d4 r8 d4 r8 | 
+    r4
+    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4 r8 d4 r8 |
+    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4   r8 d4 r8   | d4 r8 d4 r8 |  d4 r8 d4 r8 |
     c4 r8 c4 r8 | d4 r8 d4 r8 | c4 r8 c4 r8 | d4 r8 d4 r8 |
     c4 r8 c4 r8 | d4 r8 d4 r8 | d4 r8 d4 r8 | e4:min r8 e4:min r8 | d4 r8 d4 r8  |  e4:min r8 e4:min r8
-    % repetition
-    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4 r8 d4 r8 | 
-    e4:m r8 e4:m r8 | e4:m r8 e4:m r8 | d4   r8 d4 r8   | d4 r8 d4 r8 |  d4 r8 d4 r8 | 
-    c4 r8 c4 r8 | d4 r8 d4 r8 | c4 r8 c4 r8 | d4 r8 d4 r8 |
-    c4 r8 c4 r8 | d4 r8 d4 r8 | d4 r8 d4 r8 | e4:min r8 e4:min r8 | d4 r8 d4 r8 |  e4:min r8 e4:min r8
-    % Gallagher's 
+    % Gallagher's
     e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8
     %% Part A
     %e4:m r8 e4:m r8| e4:m r8 d4  r8 | e4:m r8 e4:m r8 | g4 r8 d4 r8
@@ -160,7 +127,7 @@ harmoniesOverTheHills =  \chordmode {
 
 
 \score {
- % \header { piece = "Gallagher's Frolics" }
+ \header { piece = "Gallagher's Frolics" }
   <<
       \new ChordNames {
         \set noChordSymbol = ""
@@ -176,7 +143,7 @@ harmoniesOverTheHills =  \chordmode {
 
 
 \score {
-  %\header { piece = "Over the Hills and Far Away" }
+  \header { piece = "Over the Hills and Far Away" }
   <<
       \new ChordNames {
         \set noChordSymbol = ""

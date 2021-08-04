@@ -1,12 +1,8 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-default-paper-size "a5" 'landscape)
-%#(set-global-staff-size 26)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "The Drunken Landlady + Cooley's Reel + The Wise Maid"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 06/14/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {

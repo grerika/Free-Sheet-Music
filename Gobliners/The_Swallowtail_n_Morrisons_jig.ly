@@ -1,10 +1,9 @@
-#(set-default-paper-size "a4" 'portrait)
+%TODO befejezést rendesen leírni
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "The Swallowtail + Morrison's jig"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 08/28/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -16,14 +15,14 @@ global = {
 swallowtail = \relative c' {
   \global
   \dynamicUp
-  \bar ".|:" 
-    g'8 e e b' e, e | g e g b a g | fis d d a' d, d | d' cis d a g fis | 
+  \bar ".|:"
+    g'8 e e b' e, e | g e g b a g | fis d d a' d, d | d' cis d a g fis |
     g e e b' e, e | g e g b4 cis8 | d8 cis d a g fis | g e e e4. |
   \bar ":|.|:"
   \break
     b'8 cis d e4 fis8 | e4 fis8 e d b | b cis d e4 fis8 | e d b d4. |
     \break
-    b8 cis d e4 fis8 | e4 fis8 e d b | d cis d a g fis | g e e e4. 
+    b8 cis d e4 fis8 | e4 fis8 e d b | d cis d a g fis | g e e e4.
   \bar ":|."
 }
 
@@ -36,29 +35,29 @@ harmoniesSwallowTail = \chordmode {
 morrisons = \relative c' {
   \global
   \dynamicUp
-  \bar ".|:" 
-  e4 b'8 e,4 b'8 | e,4 b'8 a8 fis d | 
-  e4. b'4 cis8 | d8 cis b a fis d | 
+  \bar ".|:"
+  e4 b'8 e,4 b'8 | e,4 b'8 a8 fis d |
+  e4. b'4 cis8 | d8 cis b a fis d |
   \break
-  e4 b'8 e,4 b'8 |  e,4 b'8  a8 fis d | 
+  e4 b'8 e,4 b'8 |  e,4 b'8  a8 fis d |
   g4 g8 fis g a | b a g fis e d |
   \bar ":|."
   \break
-  b' e e fis e e | a e e fis e d | 
-  b e e fis e e |   a4 g fis | 
-  b,8 e e fis e e| a e e fis e fis | 
-  g fis e d4 a8 | b8 a g fis e d 
+  b' e e fis e e | a e e fis e d |
+  b e e fis e e |   a4 g fis |
+  b,8 e e fis e e| a e e fis e fis |
+  g fis e d4 a8 | b8 a g fis e d
   \bar "||"
   \break
-  b' e e fis e e | a e e fis e e | 
-  b e e fis e fis | g a g d e fis | 
+  b' e e fis e e | a e e fis e e |
+  b e e fis e fis | g a g d e fis |
  % \break
-  g4 g8 g fis e | d e fis g4 d8 | 
-  e d cis d4 a8 | b a g fis e d 
+  g4 g8 g fis e | d e fis g4 d8 |
+  e d cis d4 a8 | b a g fis e d
   \bar "||"
-    e2.^\markup{\italic end} 
+    e2.^\markup{\italic end}
   \bar "|."% \break
-     e8^\markup{transition} [e e] fis [fis fis ] g [g g]  a8^\markup{\italic rit.} b8 d8 
+     e8^\markup{transition} [e e] fis [fis fis ] g [g g]  a8^\markup{\italic rit.} b8 d8
   %\bar "|."
 }
 
@@ -67,8 +66,8 @@ morrisons = \relative c' {
 harmoniesMorrisons = \chordmode {
      e2.:m e4.:m d e2.:m  g4. d e2.:m e4.:m d g2. g4. d
      e2.:m e e d e e g4.    d e:m d
-     e2.:m e:m e:m g4. d g2. 
-     d4. g e:m d g d 
+     e2.:m e:m e:m g4. d g2.
+     d4. g e:m d g d
 }
 
 \score {
@@ -99,9 +98,9 @@ harmoniesMorrisons = \chordmode {
        \new ChordNames {
         \harmoniesMorrisons
       }
-      \morrisons 
+      \morrisons
    >>
- 
+
   \layout { }
   \midi {
     \tempo 2 = 90

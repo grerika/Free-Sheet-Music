@@ -1,11 +1,8 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 22)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "Harvest Home + Off to California"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 05/02/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -17,28 +14,28 @@ global = {
 harvesthome = \relative c'{
   \global
   \dynamicUp
-  \partial  4 
+  \partial  4
     a'8  fis
    \repeat volta 2 {
-     \bar ".|:"  d  a' fis a d, a' fis a 
-         | d  e fis e d cis b a 
-         | e'  a, fis' a, g' a, fis' a, 
-         | \tuplet 3/2 {e'  fis e} \tuplet 3/2 {d cis b} \tuplet 3/2 {a  b a} \tuplet 3/2 {g fis e} 
+     \bar ".|:"  d  a' fis a d, a' fis a
+         | d  e fis e d cis b a
+         | e'  a, fis' a, g' a, fis' a,
+         | \tuplet 3/2 {e'  fis e} \tuplet 3/2 {d cis b} \tuplet 3/2 {a  b a} \tuplet 3/2 {g fis e}
          | d8  a' fis a d, a' fis a
-         | d  e fis e d cis b a 
-         | e'4  fis \tuplet 3/2 {g8 fis e} cis e  
+         | d  e fis e d cis b a
+         | e'4  fis \tuplet 3/2 {g8 fis e} cis e
    }
      \alternative {
       { d4  fis d  a8  fis }
       { d'4  fis d  cis8 d }
     }	
       \repeat volta 2 {
-         e8  a, a a fis'  a, a a 
-         | g'  a, fis' a, e'  a, a a 
-         | e'  a, fis' a, g' a, fis' a, 
-         | \tuplet 3/2 { e'  fis e} \tuplet 3/2 { d cis b} \tuplet 3/2 { a  b a } \tuplet 3/2  {g fis e} 
-         | d8  a' fis a d, a' fis a 
-         | d  e fis e d cis b a 
+         e8  a, a a fis'  a, a a
+         | g'  a, fis' a, e'  a, a a
+         | e'  a, fis' a, g' a, fis' a,
+         | \tuplet 3/2 { e'  fis e} \tuplet 3/2 { d cis b} \tuplet 3/2 { a  b a } \tuplet 3/2  {g fis e}
+         | d8  a' fis a d, a' fis a
+         | d  e fis e d cis b a
          | e'4  fis4 \tuplet 3/2 {g8 fis e} cis e
       }
          \alternative {
@@ -102,31 +99,31 @@ harmoniesOffToCalifornia = \chordmode {
 
 
 \score {
-  \header { 
-      piece = "Harvest Home" 
+  \header {
+      piece = "Harvest Home"
       opus = "Irish Hornpipe"
   }
   <<
       \new ChordNames {
-        \set noChordSymbol = "" 
+        \set noChordSymbol = ""
         \set chordChanges = ##t
         \harmoniesHarvestHome
       }
-      \harvesthome 
+      \harvesthome
   >>
 }
 
 \score {
-  \header { 
-    piece = "Off to California" 
+  \header {
+    piece = "Off to California"
     opus = "Irish Hornpipe"
   }
    <<
       \new ChordNames {
-        \set noChordSymbol = "" 
+        \set noChordSymbol = ""
         \set chordChanges = ##t
         \harmoniesOffToCalifornia
       }
-      \offtocalifornia 
+      \offtocalifornia
    >>
 }

@@ -1,13 +1,9 @@
-%#(set-default-paper-size "a5" 'landscape)
-%#(set-global-staff-size 19)
-#(set-default-paper-size "a4" 'portrait)
+\include "default-settings.ly"
 
-\version "2.16.2"
 \header {
-    title = "Breton waltz"
-    arranger = "Traditional Breton"
-    enteredby = "grerika @ github"
-    tagline = "Last update: 04/25/2020 (Gobliners)"
+    title = "Breton keringő"
+    %arranger = "Traditional Breton"
+    tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -48,11 +44,11 @@ harp =  \relative c {
 
 <<
   \new Staff  \with {
-      instrumentName = "Flute"
+      instrumentName = "F"
       %shortInstrumentName = "F"
     } \flute
   \new Staff  \with {
-      instrumentName = "Harp"
+      instrumentName = "H"
       %shortInstrumentName = "H"
     } \harp
 >>

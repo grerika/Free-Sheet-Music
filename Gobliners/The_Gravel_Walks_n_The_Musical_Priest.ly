@@ -1,11 +1,8 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 24)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "The Gravel Walks + The Musical Priest"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 08/30/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 gravelswalk = \relative c'' {
@@ -70,7 +67,7 @@ musicalpriest = \relative c''{
       fis,8 b b4\mordent b8 a b d | cis b a fis' e cis b a |
       fis b b4\mordent b8 a b d | cis b a fis b4
     \bar ":|.|:"
-    %\break
+    \break
     \repeat volta 2 {
       b8 cis | d4 d8 cis d fis e d | \tuplet 3/2 {cis8 b a } e'8 a, fis' a, e' a,
     }
@@ -78,7 +75,7 @@ musicalpriest = \relative c''{
       { d8 cis b cis d fis a fis | e d cis d b4 } %\break
       { \partial 1 d8 cis b cis d b' a fis    e d cis d b4 }
     }
-    %\break
+    \break
     \repeat volta 2 {
       b8 cis | d
       b b4\mordent b'8 a fis b
@@ -94,14 +91,12 @@ musicalpriest = \relative c''{
 harmoniesMusicalPriest = \chordmode {
     e4:min r e:min r | d r d r | e:min r e:min r | d r e:min r |
     g r g r | d r d r | e:min r e:min r | d r e8:min r8  e4:min r e4:min r | d r e:min r
-    g r g r | d r d r | e:min r e:min r | d r e8:min r8 | e4:min r e:min r | d r e:min r 
+    g r g r | d r d r | e:min r e:min r | d r e8:min r8 | e4:min r e:min r | d r e:min r
 }
 
-
-
 \score {
-  \header { 
-      piece = "The Gravel Walks" 
+  \header {
+      piece = "The Gravel Walks"
     } % (reel)
   <<
       \new ChordNames {

@@ -1,12 +1,9 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 24 )
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "Az Ordastölgy Dala"
-  composer = "Dallam és szöveg: Csanádi Viktor"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 05/09/2020 (Gobliners)"
+  composer = "Csanádi Viktor"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -123,5 +120,3 @@ verse = \lyricmode {
   % can be removed if page space is tight
   }
 }
-
-

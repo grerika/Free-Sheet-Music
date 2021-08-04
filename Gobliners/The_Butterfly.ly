@@ -1,14 +1,11 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 16.5)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "The Butterfly"
   subtitle = "Slip Jig"
-  composer = "Traditional Irish"
-  arranger = "Arrangement: Dominig Bauchaud"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 04/25/2020 (Gobliners)"
+  composer = "Tradicionális ír"
+  arranger = "Dominig Bauchaud"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -20,7 +17,7 @@ global = {
 recorder = \relative c'' {
   \global
     | 
-      b4^\markup{Theme A} e,8 g4 e8 fis4.
+      b4^\markup{A téma} e,8 g4 e8 fis4.
     | 
       b4 e,8 g4 e8 fis e  d
     | 
@@ -29,7 +26,7 @@ recorder = \relative c'' {
       b4   d8  d4 b8  a8 fis8  d8
    \bar ":|.|:" \break
     | 
-        b'4^\markup{Theme B}  c8  e4   fis8   g4.
+        b'4^\markup{B téma}  c8  e4   fis8   g4.
     |         
         b,4  c8  g'4   e8    d  b a
     | 
@@ -39,7 +36,7 @@ recorder = \relative c'' {
         a
    \bar ":|.|:"  \break
     | 
-        b4.^\markup{Theme C}    b4  a8  g4    a8
+        b4.^\markup{C téma}    b4  a8  g4    a8
     |
         b4.   b8 a  b  d  b  a
     | 
@@ -62,7 +59,7 @@ harp =  \relative c {
     | <<a4 a' >> <<a8 e' ~>> <<e4. a,>> r
     | <<g2. g,2>> r4.
     | <<a4 a' e>> <<a8 e' ~>> <<e4 a,>> <<c8 g' ~>> <<g4. c,>>
-    | r4.^\markup{this part was missing from the original score :)} r4. r4.
+    | r4.^\markup{az eredeti kottában itt nem voltak hangok :)} r4. r4.
 \bar ":|.|:"
     | g8 d'4 ~ d4. r4.
     | fis,8 d'4 ~ d4. r4.
@@ -73,11 +70,11 @@ harp =  \relative c {
 
 <<
   \new Staff  \with {
-      instrumentName = "Flute"
+      instrumentName = "F"
       %shortInstrumentName = "F"
     } \recorder
   \new Staff  \with {
-      instrumentName = "Harp"
+      instrumentName = "H"
       %shortInstrumentName = "H"
     } \harp 
 >>

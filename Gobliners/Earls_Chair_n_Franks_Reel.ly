@@ -1,12 +1,9 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 24)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "Earl's Chair + Frank's Reel"
   %arranger = "Hornpipe, Ireland, traditional"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 08/28/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {

@@ -1,13 +1,12 @@
-#(set-default-paper-size "a4" 'portrait)
+\include "default-settings.ly"
 
 % source https://www.irish-folk-songs.com/dirty-old-town-sheet-music-and-tin-whistle-notes.html
-\version "2.18"
+
 \header {
   title = "Dirty Old Town"
-  composer = "Written by Ewan McColl"
-  arranger = "Hungarian lyrics: Csanádi Viktor"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2020 (Gobliners)"  
+  composer = "Szerző: Ewan McColl"
+  poet = "Magyar dalszöveg: Csanádi Viktor"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -77,8 +76,7 @@ harmonies = \chordmode {
       }
       \voice 
       \addlyrics { 
-        \set stanza = #"English: "  
-        \verseENG
+        \set stanza = #"" \verseENG
       }
   >>
 

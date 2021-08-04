@@ -1,12 +1,8 @@
-%#(set-default-paper-size "a5" 'landscape)
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 26)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
-  title = "The Kesh + Merrily kissed the Quaker's Wife"  
-  enteredby = "grerika @ github"
-  tagline = "Last update: 05/08/2020 (Gobliners)"
+  title = "The Kesh + Merrily kissed the Quaker's Wife"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -22,8 +18,8 @@ keshjig = \relative c' {
   g4 g8 g8 a b  | a4 a8 a8 b d | e8 d d g d d | b a fis g4.
   \bar ":|.|:"
   \break
-   b4 b8 d4 d8 | e8 g e d b a | b4 b8 d b g | a b a a g a | 
-   b a b d cis d | e g e d b d | g fis g a g a | b g g g4. 
+   b4 b8 d4 d8 | e8 g e d b a | b4 b8 d b g | a b a a g a |
+   b a b d cis d | e g e d b d | g fis g a g a | b g g g4.
   \bar ":|."
 }
 
@@ -52,7 +48,7 @@ merrily = \relative c' {
     | g8 a b d,4 b'8 c4 a8 b g e
     | g a b d,8 e8 g8 a4 a8 a4 e8
     | g a b d,4 b'8  c4 a8 b g e
-    | g a b d,8 e fis g4 g8 g4 
+    | g a b d,8 e fis g4 g8 g4
   \bar "||" %\bar ":|.|:"
   \break
     | a8%^\markup{E}
@@ -65,7 +61,7 @@ merrily = \relative c' {
     | g8 a g fis8 g fis
     | e fis e  d e d
     | g a b d, e fis g4 g8 g4
-  \bar ".|:"
+  \bar ".|:" \break
     | d'8    g4 g8 a8 g a b  a g e4 d8
     | g4 g8 g8 a b a4 a8 a4.
     | g8 a g fis8 g fis
@@ -75,7 +71,7 @@ merrily = \relative c' {
 }
 
 harmoniesMerrily = \chordmode {
-  r8 
+  r8
   g4. g c g4 r8 g4. g d d g4. g c g4 r8 g4 r8 d4. g4. r4.
   g4. g c g4 r8 g4. g d d g4. g c g g d g g4 r8
   %
@@ -87,33 +83,33 @@ harmoniesMerrily = \chordmode {
 
 \score {
   \header {
-    piece = "The Kesh"
-    opus = "jig"
+    piece = "The Kesh (jig)"
+    %opus = "jig"
     %arranger = "Traditional Irish"
   }
   <<
     \new ChordNames {
-        \set noChordSymbol = "" 
+        \set noChordSymbol = ""
         \set chordChanges = ##t
         \harmoniesKesh
     }
-    \keshjig 
+    \keshjig
   >>
 }
 
 
 \score {
-  \header { 
+  \header {
       piece = "Merrily Kissed The Quaker's Wife"
      %arranger = "Traditional Irish"
   }
    <<
     \new ChordNames {
-        \set noChordSymbol = "" 
+        \set noChordSymbol = ""
         \set chordChanges = ##t
         \harmoniesMerrily
     }
-    \merrily 
+    \merrily
   >>
   \layout {}
   \midi {}

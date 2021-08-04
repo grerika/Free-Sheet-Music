@@ -1,14 +1,11 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-global-staff-size 26)
+\include "default-settings.ly"
 
-\version "2.18"
 \header {
   title = "The Irish Rover"
   %subtitle = "march"
-  composer = "Traditional Irish"
-  arranger = "Hungarian lyrics: Csanádi Viktor"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 08/28/2020 (Gobliners)"  
+  composer = "Tradicionális ír"
+  poet = "Szöveg: Csanádi Viktor"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -19,18 +16,18 @@ global = {
 voice = \relative c'' {
   \global
   \dynamicUp
-  \partial 4  b8 a | 
+  \partial 4  b8 a |
   g4 b8 c d4 g8 a |
   b4 a8 fis g4 fis8 e | d4 e8 d b4 c8 b |
   a4 a8 b a4^\markup{\small \italic fine} \bar "||" d8 b |
-  g4 b8 c d4 g8 a | b4 a8 fis g4 fis8 e d4 fis8 g a4 fis8 d | g4 g g 
+  g4 b8 c d4 g8 a | b4 a8 fis g4 fis8 e d4 fis8 g a4 fis8 d | g4 g g
   \bar "||"
   \break
   d8 d | g4 g8 a8 b4 g8 b8 | a4 a8 fis8 d4 e8 fis8 |
   g4 g8 a8 b4 g8 b8 | a4 fis8 e8 d4 \bar "||"
   \break
-  b8 a8 
-  g4 b8 c8 d4 g8 a8 | b4 a8 fis8 g4 fis8 e8 | 
+  b8 a8
+  g4 b8 c8 d4 g8 a8 | b4 a8 fis8 g4 fis8 e8 |
   d4 fis8 g8 a4 fis8 d8 | g4 g8. g16 g4^\markup{\small \italic {D.C. al fine} }
   \bar "|."
 }
@@ -43,31 +40,31 @@ verse = \lyricmode {
   _ _ _
   We were sail -- ing a -- way with a car -- go of bricks
   For the fine ci -- ty hall of New York _ _
-  
+
   'twas a won -- der -- ful craft, she was rigged for  and aft _ and
   oh, how the wild winds _ drove  _ _ her
-  She'd got se -- ve -- ral blasts she'd twen -- ty -- se -- ven masts 
-  And we called her the I -- ri -- sh Ro -- ver 
+  She'd got se -- ve -- ral blasts she'd twen -- ty -- se -- ven masts
+  And we called her the I -- ri -- sh Ro -- ver
 }
 
 harmonies = \chordmode {
   r4
-  g2 g c c g g d d 
+  g2 g c c g g d d
   g g c c  g d c c
-  g g d d g g d d 
+  g g d d g g d d
   g g e:m e:m g d g g
 }
 
 \score {
   <<
     \new ChordNames {
-       \set noChordSymbol = "" 
+       \set noChordSymbol = ""
       \set chordChanges = ##t
       \harmonies
     }
-    \voice 
+    \voice
   >>
-  
+
   \layout { }
   \midi {
     \context {
@@ -108,13 +105,15 @@ harmonies = \chordmode {
           "Hétmillió hordót teli söörrel"
           "Még nyolcmillió tarka kecskemama farka"
           "Ez mind az öreg hajóra volt rakva"
+          \hspace #1
+          "(hosszabb fuvola szóló)"
         }
       }
     }
     \hspace #0.2 % adds horizontal spacing between columns;
     \column {
       \line { \bold "3."
-        \column {       
+        \column {
           "Micky volt legényem, ki fuvolált keményen,"
           "A hölgyek mind elolvadtak tőle"
           "Bár nem volt túlzón magas,"
@@ -128,7 +127,7 @@ harmonies = \chordmode {
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "4."
-        \column {               
+        \column {
             "Már hét éve hajóztunk, mikor (a) kanyaró is kitört"
             "És eltűntünk a ködök tengerén"
             "Szép lassan elfogytunk, s csak ketten maradtunk"

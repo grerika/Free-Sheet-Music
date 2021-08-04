@@ -1,14 +1,11 @@
-%#(set-default-paper-size "a5" 'landscape)
-#(set-default-paper-size "a4" 'portrait)
-#(set-global-staff-size 18)
+\include "default-settings.ly"
+#(set-global-staff-size 17.5)
 
-\version "2.18"
 \header {
     title = "Brian Boru's March"
     composer = "Anonymous"
    % arranger = "Arranged for Flute (Alto Recorder) and Piano by Valerio Carpeggiani"
-    enteredby = "grerika @ github"
-    tagline = "Last update: 05/18/2020 (Gobliners)"
+    tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
@@ -19,20 +16,20 @@ global = {
 
 flute = \relative c'' {
   \global
-  \partial 4  e8^\markup{Theme A} d 
+  \partial 4  e8^\markup{A téma} d
   c8. b16 a8 a8 e' d | c8. b16 a8 a8 d8 c | b8. a16 g8 g8 d'8 c | 
   b8. a16 g8 g8 e' d | c8. b16 a8 a8 e'8 d |c8. b16 a8 a4. | 
   a8. c16 d8 e4 d8  | c8. b16 a8 a4 r8 
   \bar ":|.|:"
   \break
   %a or g?
-  a8.^\markup{Theme B} c16 d8 e4 d8  | e4 d8 e4 d8 | g,8. b16 c8 d4 b8 | d4 b8 d4 c8 | 
+  a8.^\markup{B téma} c16 d8 e4 d8  | e4 d8 e4 d8 | g,8. b16 c8 d4 b8 | d4 b8 d4 c8 |
   a8. c16 d8 e4 d8 | e4 d8 e4 d8 | c8. b16 a8 e'4 d8 | c8. b16 a8 a4 r8
   \bar ":|." \break
   % Theme C with Viktor's version
-  c8.^\markup{Theme C} b16 a8 a'8\staccato r a8\staccato  | c,8. b16 a8 a'8\staccato r a8\staccato | 
+  c8.^\markup{C téma}  b16 a8 a'8\staccato r a8\staccato  | c,8. b16 a8 a'8\staccato r a8\staccato | 
   b,8. a16 g8 g'8\staccato r8 g8\staccato | b,8. a16 g8 g'8\staccato r g8\staccato |  
-  c,8. b16 a8 a'8\staccato r a8\staccato  | c,8. b16 a8 a'8\staccato r a8\staccato | 
+  c,8. b16 a8 a'8\staccato r a8\staccato  | c,8. b16 a8 a'8\staccato r a8\staccato |
   a,8. c16 d8 e4 d8 | c8. b16 a8 a4 r8
   % Theme C in the original score
   %c'8.^\markup{Theme C} b16 a8 a4 e'8  | c8. b16 a8 a4 d8 | 
@@ -94,11 +91,11 @@ lowerHarp = \relative c {
 \score {
   <<
     \new Staff  \with {
-        instrumentName = "Flute"
+        instrumentName = "F"
         shortInstrumentName = "F"
       } \flute
     \new PianoStaff \with { 
-      instrumentName = "Harp" 
+      instrumentName = "H"
       shortInstrumentName = "H"
     }
     <<

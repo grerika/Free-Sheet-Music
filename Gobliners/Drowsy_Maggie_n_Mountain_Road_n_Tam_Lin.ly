@@ -1,18 +1,15 @@
-#(set-default-paper-size "a4" 'portrait)
-%#(set-default-paper-size "a5" 'landscape)
-%#(set-global-staff-size 26)
+\include "default-settings.ly"
+#(set-global-staff-size 19)
 
-\version "2.18"
 \header {
   title = "Drowsy Maggie + Mountain Road + Tam Lin"
-  enteredby = "grerika @ github"
-  tagline = "Last update: 08/30/2020 (Gobliners)"
+  tagline = "Utoljára frissítve: 2021. augusztus 4."
 }
 
 global = {
   \key d \major
   \time 4/4
-   \tempo 2 = 70 
+ % \tempo 2 = 70
 }
 
 
@@ -34,10 +31,10 @@ drowsyMaggie = \relative c' {
     d4 fis8 d  cis4 e8 cis | d e fis g a fis g e |
     d4 fis8 d  cis4 e8 cis | b a b cis d a fis a\break
   %
-    d4_\markup{First time}  fis8 d  cis4 e8 cis | d e fis g a fis g e
+    d4_\markup{Első alkalommal}  fis8 d  cis4 e8 cis | d e fis g a fis g e
     a8fis g e fis d e cis     | b a b cis d a fis a\break
     %\bar "||"
-    d4_\markup{Second time}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
+    d4_\markup{Második alkalommal}  fis8 d  cis4 e8 cis | d4 fis8 d8 fis8 a4  a8 |
     b8 a8 (a8) fis8 g fis e  d8 | b4 r4 r4 r4
   % Themes C
      % d8 b fis' b, d b fis' b, | cis a e' a, fis' a, e' a, | 
