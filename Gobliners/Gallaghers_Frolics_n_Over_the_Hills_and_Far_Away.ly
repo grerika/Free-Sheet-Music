@@ -37,7 +37,7 @@ gallaghers = \relative c' {
     e4 fis8 g fis e | d fis e d b a | b a g fis a fis
   }
   \alternative {
-     { g8 e e e4 e'8 }
+     { e' b e d g fis } % { g8 e e e4 e'8 }
      { g,8 e e e4 d8 }
   }
   %ˇ\bar "|."
