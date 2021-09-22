@@ -2,33 +2,40 @@
 
 \header {
   title = "The Gravel Walks + The Musical Priest"
-  tagline = "Utoljára frissítve: 2021. augusztus 4."
+  tagline = "Utoljára frissítve: 2021. augusztus 15."
 }
 
 gravelswalk = \relative c'' {
      \key g \major
       \time 4/4
      %\bar ".|:"
+     \repeat volta 2 {
+
        a4  e'8 a,  \tuplet 3/2 {c8 b a } e'8 a, |
-       a4 e'8 a, b  a g b |
-       a4  e'8 a,  \tuplet 3/2 {b c d } e8 fis | g  e d c b a g b
-     %\bar ":|."	ˇ
-       a4  e'8 a,  \tuplet 3/2 {c8 b a } e'8 a, |
-       a4 e'8 a, b  a g b |
-       a8 b c d  e8 fis g a | g  e d c b a g b
-     \bar "||"
-      \break
+       a4 e'8 a, b  a g b }
+     \alternative{
+       {a4  e'8 a,  \tuplet 3/2 {b c d } e8 fis
+        g  e d c b a g b \break}
+       { a8 b c d  e8 fis g a |
+         g  e d c b a g b
+       }
+     }
+
+     \repeat volta 2 {
        a4 a'8 a, g' a, fis' a, |
-       a4 e'8 a, b  a g b |
-       a4  a'8 a, g' a, fis' a,
-       g' e d c b a g b
-     \break
-       a4 a'8 a, g' a, fis' a, |
-       a4 e'8 a, b  a g b |
-       a  b c d e fis g a |
-       g e d c b a g b
+       a4 e'8 a, b  a g b
+     }
+     \alternative {
+       {
+         a4  a'8 a, g' a, fis' a,
+         g' e d c b a g b}
+       {
+         a  b c d e fis g a |
+         g e d c b a g b
+       }
+     }
      \bar ".|:"
-     \break
+     %\break
        \tuplet 3/2 {c8  b a } b g a4 a8 b |
        c a a d b  a g b |
        \tuplet 3/2 {c8 b a} b g a b c d |
@@ -54,7 +61,7 @@ harmoniesGravelWalk = \chordmode {
     a4:m r a:min r a:min r g r a:min r a:min r c r g r
     a4:m r a:min r a:min r g r a:min r a:min r c r g r
     a4:m r a:min r a:min r g r a:min r a:min r c r g r
-    a4:m r a:min r a:min r g r a:min r a:min r c r g r
+    %a4:m r a:min r a:min r g r a:min r a:min r c r g r
     c4 r c r c r g r c r c r g r g r
     c4 r c r c r g r a:min r a:min r g r g r
 }

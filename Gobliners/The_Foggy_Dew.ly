@@ -18,11 +18,11 @@ voice = \relative c'{
   \dynamicUp
   \partial  4
   b'8 (d)
-   \bar ".|:"
+   %\bar ".|:"
        e4 d8 (b) | e4 d8 (b) | a4 (b) | d,4 e8 fis | g [b a g] | e4. d8 | e2 ( e4)
-   \bar ":|."
+   %\bar ":|."
    \break
-     b'8 d  e4 d8 b | e4 d8 b | a4 b | d,4 e8 (fis) | g [b a g] | e4. d8 | e2 ( e4)
+     b'8 d  e4 d8 b | e4 d8 b | a4 b | d,4 e8 (fis) | g [b a g] | e4 e8. d16 | e2 ( e4)
    \bar "||"
    \break
     e8 (fis) | g4 b | d c8 b | a4 a | b4 g8 (a) | b4 g'8 fis |  e8 [ d b (d) ] | e2 ( e4)
@@ -44,7 +44,7 @@ harmonies = \chordmode {
 
 verseHungarian = \lyricmode {
   Épp haj -- nal volt hús -- vét -- kor, a -- hogy vág -- táz -- tam a völgy -- ben én
-  Du -- da sem szólt és hall -- gat -- tak a do -- bok, ám Liffey ha -- rang -- ja még ze -- nélt
+  Du -- da sem szólt és hall -- gat -- tak a do -- bok, ám Lif -- fey ha -- rang -- ja még ze -- nélt
   A zász -- la -- ja büsz -- kén meg -- fe -- szült, és é -- rez -- tem a harc he -- vét
   Hi -- szen Ír hon -- ban el -- múl -- ni di -- cső -- ség, hős ki itt ont -- hat -- ja vé -- rét.
 }
